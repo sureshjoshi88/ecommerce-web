@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+/* navbar css */
+.nav-buttoon{
+    border: none !important;
+}
+.nav-buttoon:focus{
+    border: none !important;
+    outline: none !important;
+}
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
+
+.nav-canvas-text{
+    color: #ba923e;
+}
+.ofcanvas-main-body{
+    height: 86%;
+}
+.canvas-buton{
+    height: 5.2vh;
+    width: 7rem;
+    border: 1.4px solid black;
+    border-radius: 20px;
+    background-color: transparent;
+}
+/* foter css */
+.foter-input{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.637);
+}
+.foter-buton{
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.637);
+    background-color: transparent;
+}
+.foterancertag a{
+    text-decoration: none;
+    color: black;
+}
+.foterancertag a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+.part-first-conatiner{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.baground-imageforshopmain{
+    height: 60vh;
+    width: 100% !important;
+    background-image: url(imgae-for-shop/Rectangle\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.abs-for-blur-child{
+    position: absolute !important;
+    text-align: center;
+    top: 0%;
+    background-color: rgba(0, 0, 0, 0.346);
+    height: 100%;
+    width: 100%;
+    /* display: none !important; */
+    opacity: 0;
+    color: white !important;
+    transition: all 1s 0.01s ease !important;
+
+}
+.img-detailes{
+    margin-top: -10px;
+}
+.main-for-cart{
+    background-color: #f4f5f7;
+    position: relative;
+    border-radius: 1px;
+}
+.main-for-cart:hover .abs-for-blur-child{
+    /* display: block !important; */
+    opacity: 1 !important;
+
+}
+.linethrow{
+    text-decoration: line-through;
+}
+.abs-div-img{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: rgba(243, 38, 38, 0.788);
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    font-size: 12px;
+}
+.abs-div-img1{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: rgba(39, 185, 185, 0.945);
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    font-size: 12px;
+}
+.child-for-main-shop{
+    background-color: #f9f2e8;
+}
+.buton-forshope{
+    height: 50px;
+    width: 40px;
+    background-color: white;
+    color: rgb(160, 158, 158);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 2px;
+}
+.buton-forshope2{
+    height: 50px;
+    width: 12rem;
+    background-color: white;
+    color: rgb(160, 158, 158);
+    border: none;
+    border-radius: 2px;
+    padding-right: 10vh;
+}
+.buton-forshopeinslider1{
+    height: 50px;
+    width: 40px;
+    background-color:#ba923e ;
+    color: white;
+    border: none;
+    border-radius: 2px;
+}
+.buton-forshopeinslider1:hover{
+    background-color:#f9f2e8 ;
+    color: black;
+}
+.buton-forshopeinslider2{
+    height: 50px;
+    width: 40px;
+    background-color:#f9f2e8 ;
+    color: black;
+    border: none;
+    border-radius: 2px;
+}
+.buton-forshopeinslider2:hover{
+    background-color:#ba923e ;
+    color: white;
+}
+.buton-forshopeinslider3{
+    height: 50px;
+    width: 40px;
+    background-color:#f9f2e8 ;
+    color: black;
+    border: none;
+    border-radius: 2px;
+}
+.buton-forshopeinslider3:hover{
+    background-color:#ba923e ;
+    color: white;
+}
+.buton-forshopeinslider4{
+    height: 50px;
+    width: 80px;
+    background-color:#f9f2e8 ;
+    color: black;
+    border: none;
+    border-radius: 2px;
+}
+.buton-forshopeinslider4:hover{
+    background-color:#ba923e ;
+    color: white;
+}
+.section-for7prow{
+    background-color: #faf4eb;
+
+}
+.tropy-forchild-part7{
+    font-size: 15px;
+    line-height: 5px;
+    padding-top: 4px;
+}
+.text-forchild-part7{
+    font-size: 13px;
+}
+
+@media (max-width:992px) {
+    .navbar-gap{
+        gap: 7px !important;
+    }
+}
+@media (max-width:576px) {
+    .foter-justfy{
+        display: flex;
+        justify-content: center;
+    }
+    .foter-side-left{
+        margin-left: 60px !important;
+    }
+}
