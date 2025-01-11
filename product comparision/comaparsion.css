@@ -73,3 +73,9 @@
 .view-more-line{
     text-decoration: underline;
 }
+.img-asecpt-ratio{
+    aspect-ratio: 3/2;
+}
+.font-size-part3{
+    font-size: 14px;
+}
