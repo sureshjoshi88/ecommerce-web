@@ -92,3 +92,12 @@
     background-color:  aliceblue;
     color: black;
 }
+.bt-foraddtocart{
+    height: 40px;
+    width: 10rem;
+    background-color: #ba923e;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+}
