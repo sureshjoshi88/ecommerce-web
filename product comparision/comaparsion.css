@@ -79,3 +79,16 @@
 .font-size-part3{
     font-size: 14px;
 }
+.salect-part3{
+    background-color: #ba923e;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    /* outline: none; */
+    padding: 5px;
+    margin-top: 5px;
+}
+.salect-part3 option{
+    background-color:  aliceblue;
+    color: black;
+}
