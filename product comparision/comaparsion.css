@@ -114,3 +114,16 @@
 .text-forchild-part7{
     font-size: 13px;
 }
+.justy-part6{
+    text-align: justify;
+}
+@media (max-width:576px) {
+    .center-text-sm{
+        text-align: center;
+    }
+}
+@media (max-width:768px) {
+    .center-sm-part6{
+        text-align: center;
+    }
+}
