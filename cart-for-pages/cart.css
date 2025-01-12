@@ -104,3 +104,13 @@
     border: 1px solid rgba(0, 0, 0, 0.61);
     background-color: transparent;
 }
+.bg-color-part2cart{
+    background-color: #faf4eb;
+    /* padding: 14px; */
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+}
+.text-color-cart-part2{
+    color: #ba923e;
+}
