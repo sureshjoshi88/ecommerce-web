@@ -118,7 +118,8 @@
     text-align: justify;
 }
 .border-div0part{
-    border: 1px solid rgba(0, 0, 0, 0.329);
+    border: 0.7px solid rgba(0, 0, 0, 0.329);
+    border-radius: 2px;
 }
 @media (max-width:576px) {
     .center-text-sm{
