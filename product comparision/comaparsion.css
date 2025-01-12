@@ -121,6 +121,12 @@
     border: 0.7px solid rgba(0, 0, 0, 0.329);
     border-radius: 2px;
 }
+.main-for-childpart2{
+    background-color: #f9f2e8;
+    padding: 10PX;
+}
+
+
 @media (max-width:576px) {
     .center-text-sm{
         text-align: center;
