@@ -106,11 +106,19 @@
 }
 .bg-color-part2cart{
     background-color: #faf4eb;
-    /* padding: 14px; */
+    padding: 14px;
     border-radius: 3px;
     display: flex;
     justify-content: center;
 }
 .text-color-cart-part2{
     color: #ba923e;
+}
+.btn-cart-part2{
+    padding: 9px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.61);
+    border-radius: 10px;
+    background-color: transparent;
 }
