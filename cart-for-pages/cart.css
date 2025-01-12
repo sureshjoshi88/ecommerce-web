@@ -97,3 +97,10 @@
     padding: 13px;
     border-radius: 3px;
 }
+.buton-for-cart-part2{
+    padding: 3px;
+    padding-left: 11px;
+    padding-right: 11px;
+    border: 1px solid rgba(0, 0, 0, 0.61);
+    background-color: transparent;
+}
