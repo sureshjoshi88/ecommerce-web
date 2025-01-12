@@ -117,6 +117,9 @@
 .justy-part6{
     text-align: justify;
 }
+.border-div0part{
+    border: 1px solid rgba(0, 0, 0, 0.329);
+}
 @media (max-width:576px) {
     .center-text-sm{
         text-align: center;
