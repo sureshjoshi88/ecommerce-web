@@ -89,10 +89,15 @@
     margin-top: 13vh;
 
 }
-.main-for-input-part2check input{
+input{
     height: 7vh;
     background-color: white;
     border: 1px solid rgb(124, 122, 122);
     border-radius: 5px;
+    width: 100%;
+    margin-top: 7px;
     
+}
+.main-input-parent{
+    margin-top: 7px;
 }
