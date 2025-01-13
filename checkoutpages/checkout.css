@@ -89,7 +89,7 @@
     margin-top: 13vh;
 
 }
-input{
+.main-input-parent input{
     height: 7vh;
     background-color: white;
     border: 1px solid rgb(124, 122, 122);
