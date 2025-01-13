@@ -136,20 +136,21 @@
 <div class="container mt-3">
   <div class="row">
     <div class="col-sm-12 col-md-6 col-lg-6 mt-3">
-      <div class="p-2 main-input-parent">
+      <form action="">
+        <div class="p-2 main-input-parent">
        <div class="d-flex gap-2 main-for-input-part2check">
         <div>
           <label for="101">FirstName</label>
-          <input type="text" placeholder="Enter a firstName" id="101">
+          <input required type="text" placeholder="Enter a firstName" id="101">
         </div>
         <div>
           <label for="102">LastName</label>
-          <input type="text" placeholder="Enter a LastName" id="102">
+          <input required type="text" placeholder="Enter a LastName" id="102">
         </div>
        </div>
        <div class="mt-3 pt-1">
         <label for="103">Company Name (Optional)</label><br>
-        <input type="text" id="103">
+        <input required type="text" id="103">
        </div>
        <div class="mt-3 pt-1">
         <label for="104">Country / Region</label><br>
@@ -159,7 +160,35 @@
           <option value="USA">USA</option>
         </select>
        </div>
+       <div class="mt-3 pt-1">
+        <label for="105">Town / City</label><br>
+        <input required type="text" id="105">
+       </div>
+       <div class="mt-3 pt-1">
+        <label for="106">Province</label><br>
+        <select name="" id="106">
+          <option value="Western Province">Western Province</option>
+          <option value="Sarilnka">Sarilnka</option>
+          <option value="USA">USA</option>
+        </select>
+       </div>
+       <div class="mt-3 pt-1">
+        <label for="107">ZIP code</label><br>
+        <input required type="number" id="107">
+       </div>
+       <div class="mt-3 pt-1">
+        <label for="108">Phone</label><br>
+        <input required type="number" id="108">
+       </div>
+       <div class="mt-3 pt-1">
+        <label for="109">Email address</label><br>
+        <input required type="email" id="109">
+       </div>
+       <div class="mt-3 pt-1">
+        <input required  type="text" placeholder="Additional information" >
+       </div>
       </div>
+      </form>
     </div>
   </div>
 </div>
