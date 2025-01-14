@@ -89,3 +89,12 @@
     margin-top: 13vh;
 
 }
+.main-input-parent-contact input{
+    height: 7vh;
+    background-color: white;
+    border: 1px solid rgb(124, 122, 122);
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 7px;
+    
+}
