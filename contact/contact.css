@@ -96,13 +96,23 @@
     border-radius: 5px;
     width: 100%;
     margin-top: 7px;
+    padding: 4px;
     
 }
 textarea{
-    height: 13vh;
+    height: 7vh;
     width: 100%;
     background-color: white;
     border: 1px solid rgb(124, 122, 122);
     border-radius: 5px;
     margin-top: 7px;
+    padding: 4px;
+}
+.sumbit-vuton-part3{
+    height: 9vh;
+    width: 12rem;
+    color: white;
+    background-color: #ba923e;
+    border: none;
+    border-radius: 4px;
 }
