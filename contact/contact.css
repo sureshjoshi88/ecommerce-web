@@ -90,11 +90,19 @@
 
 }
 .main-input-parent-contact input{
-    height: 7vh;
+    height: 9vh;
     background-color: white;
     border: 1px solid rgb(124, 122, 122);
     border-radius: 5px;
     width: 100%;
     margin-top: 7px;
     
+}
+textarea{
+    height: 13vh;
+    width: 100%;
+    background-color: white;
+    border: 1px solid rgb(124, 122, 122);
+    border-radius: 5px;
+    margin-top: 7px;
 }
