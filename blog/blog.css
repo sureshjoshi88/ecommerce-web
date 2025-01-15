@@ -64,3 +64,29 @@
     border-radius: 20px;
     background-color: transparent;
 }
+.section-for7prow{
+    background-color: #faf4eb;
+    padding: 10px;
+
+}
+.tropy-forchild-part7{
+    font-size: 15px;
+    line-height: 5px;
+    padding-top: 4px;
+}
+.text-forchild-part7{
+    font-size: 13px;
+}
+
+
+.bg-image-part1-comaprision{
+    height: 60vh;
+    width: 100%;
+    background-image: url(contactimages/Rectangle\ 1\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 13vh;
+
+}
+
