@@ -105,3 +105,51 @@
     border: none;
     outline: none;
 }
+.btn-part3-blog{
+    height: 10vh;
+    width: 3.5rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #ba923e;
+    color: white;
+}
+.btn-part3-blog:hover{
+    background-color: #faf4eb;
+    color: black;
+}
+.btn-part3-blog1{
+    height: 10vh;
+    width: 3.5rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #faf4eb;
+    color: black;
+}
+.btn-part3-blog1:hover{
+    color: white;
+    background-color: #ba923e;
+}
+.btn-part3-blog2{
+    height: 10vh;
+    width: 3.5rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #faf4eb;
+    color: black;
+}
+.btn-part3-blog2:hover{
+    color: white;
+    background-color: #ba923e;
+}
+.btn-part3-blog3{
+    height: 10vh;
+    width: 4.5rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #faf4eb;
+    color: black;
+}
+.btn-part3-blog3:hover{
+    color: white;
+    background-color: #ba923e;
+}
