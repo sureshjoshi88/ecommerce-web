@@ -219,6 +219,16 @@
     width: 35px;
     border-radius: 50%;
     border: 2.3px solid #ba923e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gol-div-childpart5{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: rgb(178, 176, 176);
+   
 }
 
 @media (max-width:768px) {
