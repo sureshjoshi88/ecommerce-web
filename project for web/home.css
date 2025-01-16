@@ -212,6 +212,15 @@
 .foterancertag a:hover{
     text-decoration: underline;
 }
+
+
+.gol-div-part5main{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: 2.3px solid #ba923e;
+}
+
 @media (max-width:768px) {
     .none-for-md{
         display: block;
