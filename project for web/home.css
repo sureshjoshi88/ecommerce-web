@@ -230,6 +230,10 @@
     background-color: rgb(178, 176, 176);
    
 }
+.main-for-anker-tag{
+    text-decoration: none;
+    color: black;
+}
 
 @media (max-width:768px) {
     .none-for-md{
