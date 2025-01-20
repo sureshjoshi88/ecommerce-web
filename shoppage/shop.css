@@ -208,6 +208,10 @@
 .text-forchild-part7{
     font-size: 13px;
 }
+.main-for-anker-tag{
+    text-decoration: none;
+    color: black;
+}
 
 @media (max-width:992px) {
     .navbar-gap{
