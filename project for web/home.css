@@ -273,12 +273,18 @@
     .marginimg9{
         margin-top: 10px !important;
     }
-  
+  .foter-images-1{
+    height: 50vh;
+  }
+  .imgages-1foter{
+    object-fit: cover;
+}
 }
 @media (max-width:992px) {
     .navbar-gap{
         gap: 7px !important;
     }
+   
 }
 @media (max-width:576px) {
     .foter-justfy{
