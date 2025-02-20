@@ -7,7 +7,7 @@
     font-family: "Poppins", serif;
 }
 .curser-icon{
-    
+    cursor: pointer;
 }
 .nav-canvas-text{
     color: #ba923e;
