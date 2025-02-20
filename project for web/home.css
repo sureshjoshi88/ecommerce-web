@@ -273,11 +273,9 @@
     .marginimg9{
         margin-top: 10px !important;
     }
-  .foter-images-1{
-    height: 50vh;
-  }
   .imgages-1foter{
     object-fit: cover;
+    height: 60vh;
 }
 }
 @media (max-width:992px) {
