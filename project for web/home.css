@@ -242,6 +242,7 @@
     .none-for-md{
         display: block;
         margin-top:15px;
+        height: auto;
     }
     .main-conatainer-div-none{
         display: none;
