@@ -237,6 +237,22 @@
     text-decoration: none;
     color: black;
 }
+.grid-div{
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr 2fr 2fr ;
+    grid-gap:15px;
+}
+.child-grid{
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr 2fr 2fr  ;
+    grid-gap:15px;
+}
+.MARGIN-UPR{
+    /* margin-top: -100px;/ */
+}
+.imageg2{
+    margin-top: 50vh;
+}
 
 @media (max-width:768px) {
     .main-backgroun-img{
