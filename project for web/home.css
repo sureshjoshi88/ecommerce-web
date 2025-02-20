@@ -23,7 +23,7 @@
     background-color: transparent;
 }
 .main-backgroun-img{
-    height: 90vh;
+    height: auto;
     width: 98.6vw;
     background-image: url(imgages/scandinavian-interior-mockup-wall-decal-background\ 1.png);
     background-position: center;
@@ -32,7 +32,7 @@
 }
 .main-container-first{
     background-color: #fff4e4;
-    height: 50vh;
+    height: auto;
     width: 88%;
     padding: 25px;
     border-radius: 4px;
@@ -239,6 +239,9 @@
 }
 
 @media (max-width:768px) {
+    .main-backgroun-img{
+        height: 90vh;
+    }
     .none-for-md{
         display: block;
         margin-top:15px;
