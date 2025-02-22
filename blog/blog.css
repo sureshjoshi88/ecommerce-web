@@ -50,6 +50,7 @@
 }
 .foterancertag a:hover{
     text-decoration: underline;
+    cursor: pointer;
 }
 .nav-canvas-text{
     color: #ba923e;
