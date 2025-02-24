@@ -34,11 +34,9 @@
     outline: none;
     width: 100%;
     background-color: transparent;
-    /* height: 45px; */
     font-size: 20px;
     border-bottom: 2px solid rgb(10, 168, 212);
     color: white !important;
-    /* padding: 10px; */
 }
 .butt{
     text-align: center;
@@ -54,9 +52,7 @@
     font-size: 20px;
     /* margin-top: 20px; */
 }
-.dis input{
-    width: 18px;
-}
+
 
 .btn:hover{
     background-color: white;
