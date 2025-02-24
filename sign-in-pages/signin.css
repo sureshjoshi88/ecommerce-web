@@ -4,7 +4,7 @@
 }
 .suresh {
     background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20200801/pngtree-purple-abstract-background-fluid-gradient-with-wave-forms-image_375467.jpg");
-    height: 34rem;
+    height: 37rem;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,12 +21,12 @@
 }
 
 .joshi {
-    height: 66%;
-    width: 28%;
+    height: 70%;
+    width: 40%;
     backdrop-filter: blur(100px);
     font-size: 20px;
     border-radius: 20px ;
-    padding: 10px 50px;
+    padding: 10px 45px;
 }
 
 .ram input {
@@ -57,4 +57,19 @@
 .btn:hover{
     background-color: white;
     color: black;
+}
+@media (max-width:950px) {
+    h2{
+        font-size: 20px;
+    }
+    .joshi{
+        width: 80%;
+    }
+   
+}
+@media (max-width:400px) {
+   .butt button{
+        font-size: 17px;
+        font-weight: 500;
+    }
 }
