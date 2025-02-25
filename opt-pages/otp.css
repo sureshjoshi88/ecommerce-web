@@ -4,12 +4,15 @@
     align-items: center;
     height: 100vh;
     width: 100%;
+   
 }
+
 .main input{
     height: 50px;
     width: 50px;
     font-size: 27px;
     font-weight: 600;
+    border-radius: 7px;
 }
 .heading{
     text-shadow: 2px 2px red;
