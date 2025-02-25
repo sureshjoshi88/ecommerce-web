@@ -1,5 +1,14 @@
-.main{
+.main-container{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+.main input{
+    height: 50px;
+    width: 50px;
+}
+.heading{
+    color: crimson;
 }
