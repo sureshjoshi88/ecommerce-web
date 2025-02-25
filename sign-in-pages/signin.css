@@ -33,18 +33,18 @@
     border: none;
     outline: none;
     width: 100%;
-    background-color: transparent;
     font-size: 20px;
-    border-bottom: 2px solid rgb(10, 168, 212);
-    color: white !important;
+    background-color: white;
+    border-radius: 20px;
+    padding: 7px;
+    color: black;
 }
 .butt{
     text-align: center;
     width: 100%;
 }
 .butt button{
-    background-color: aqua;
-    color: red;
+    background-color: #ba923e;
     border: none;
     border-radius: 20px;
     width: 100%;
