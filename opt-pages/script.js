@@ -108,7 +108,11 @@ setInterval(() => {
     }
 }, 1000);
 
-
+let opt_form = document.getElementById("sumbit-otp")
+function sumbit(e){
+    e.preventDefault();
+}
+opt_form.addEventListener("submit",sumbit)
 
 // for(let i = 1;i<=6;i++){
 //     let otp  =`otp-${[i]}`
