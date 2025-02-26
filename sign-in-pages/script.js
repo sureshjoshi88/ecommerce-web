@@ -22,10 +22,12 @@ function inputdata() {
     let passwordvalue = password.value;
     if (passwordvalue.length <= 8) {
         alert("plese enter 8 number password")
-        password.focus();
-        password.classList.add("form-control-after")
-    } else if (passwordvalue.length >= 8) {
-        alert("good")
+        let main2 = document.getElementById("main2")
+        main2.focus();
+        main2.style.boxShadow = "0 0 0 .25rem red"
+    }else{
+        alert("succesfull")
+        main2.style.boxShadow = "none"
     }
 }
 
@@ -40,3 +42,14 @@ input.addEventListener('focus', function (e) {
     this.style.boxShadow = "0 0 0 .25rem red"
 })
 
+
+let main_icon = document.getElementById("main-icon")
+main_icon.addEventListener("click",()=>{
+    let password = document.getElementById("password-input")
+    if(password.type=="password"){
+        password.type = "text"
+    } else if(password.type =="text"){
+        password.type="password"
+    }
+
+})

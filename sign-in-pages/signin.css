@@ -27,7 +27,15 @@
     background-color: #ba933e2f;
     box-shadow: 2px 3px 20px 2px #ba923e;
 }
-
+.ram2{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-size: 20px;
+  background-color: white;
+  border-radius: 20px;
+  color: black;
+}
 .ram input {
     border: none;
     outline: none;
@@ -37,6 +45,19 @@
     border-radius: 20px;
     padding: 7px;
     color: black;
+}
+.ram2 input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 7px;
+    color: black;
+}
+.curser-pointer-icon{
+  cursor: pointer;
 }
 .butt{
     text-align: center;
@@ -65,26 +86,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Video background style */
-  #bg-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: contain;
-    z-index: -1;
-  }
-  
-  body {
-    height: 100vh;
-  }
+
 
   /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -98,9 +100,7 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-/* .form-control:focus{
-  box-shadow: 0 0 0 .25rem red!important;
-} */
+
 
 
 .form-control-active{
@@ -130,32 +130,8 @@ input[type=number] {
   box-shadow: 0 0 0 .25rem red!important;
 }
 
-.form-control-active{
-    display: block;
-    width: 100%;
-    padding: .375rem .75rem!important;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color:  #212529;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid black;
-    border-radius:0.8rem;
-    transition: border-color .15sease-in-out, box-shadow .15sease-in-out;
-  }
 
-  .form-control-after:focus{
 
-    color: #212529 !important;
-    background-color: #fff !important;
-    border-color: #86b7fe!important;
-    outline: 0!important;
-    box-shadow: 0 0 0 .25rem red!important;
-  }
   
 
 
