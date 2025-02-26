@@ -98,6 +98,15 @@ otp6.addEventListener("keydown",(e)=>{
         document.getElementById("otp-5").focus();
     }
 })
+let value = document.getElementById("counter")
+let counter = 60;
+setInterval(() => {
+    counter--;
+    value.innerText = counter
+    if(counter>=0){
+        clearInterval(counter)
+    }
+}, 1000);
 
 
 
