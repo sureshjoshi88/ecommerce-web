@@ -54,7 +54,6 @@ main_icon.addEventListener("click",()=>{
         let main_icon = document.getElementById("main-icon")
         main_icon.style.display="none"
     } 
-
 })
 
 
