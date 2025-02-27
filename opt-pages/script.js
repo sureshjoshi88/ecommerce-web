@@ -114,6 +114,8 @@ function sumbit(e){
 }
 opt_form.addEventListener("submit",sumbit)
 
+
+
 // for(let i = 1;i<=6;i++){
 //     let otp  =`otp-${[i]}`
 //     let otpx = document.getElementById(otp);
