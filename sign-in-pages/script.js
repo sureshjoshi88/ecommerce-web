@@ -14,8 +14,6 @@ function inputdata() {
     } else {
         input.classList.remove("form-control-after");
         input.classList.add("form-control-active")
-
-
     }
 
     let password = document.getElementById("password-input")
@@ -71,8 +69,4 @@ main_icon2.addEventListener("click",()=>{
     }
  
 })
-// main_icon2.addEventListener("click",()=>{
-// let main_icon = document.getElementById("main-icon")
-// main_icon.style.display = "block"
-// main_icon2.style.display 
-// })
+
