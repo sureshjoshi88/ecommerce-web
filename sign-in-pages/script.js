@@ -31,6 +31,8 @@ function inputdata() {
     }
 }
 
+let inputs = document.getElementById("number-input").focus();
+
 
 let forms = document.getElementById("sumbit-form")
 function sumbit(event) {
