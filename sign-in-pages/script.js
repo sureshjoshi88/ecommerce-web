@@ -26,6 +26,7 @@ function inputdata() {
     }else{
         alert("succesfull")
         main2.style.boxShadow = "none"
+        window.location = "/opt-pages/otp.html"
     }
 }
 
