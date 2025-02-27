@@ -121,10 +121,7 @@ input[type=number] {
   transition: border-color .15sease-in-out, box-shadow .15sease-in-out;
 }
 
-.form-control-active:focus{
-    box-shadow: 0 0 0 .25rem #86b7fe!important;
 
-}
 .form-control-after:focus{
 
   color: #212529 !important;
