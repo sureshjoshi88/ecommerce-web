@@ -26,6 +26,9 @@
     border: none;
     cursor: pointer;
     padding: 14px;
+    box-shadow: 2px 2px 12px 2px #ba923e;
+
+
 }
 button{
     background-color: #ba923e !important;
@@ -39,6 +42,9 @@ input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
 }
 
+.curser{
+    cursor: pointer;
+}
 @media (max-width:1200px) {
     .main{
         height: auto;
