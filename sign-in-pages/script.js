@@ -24,7 +24,6 @@ function inputdata() {
         main2.focus();
         main2.style.boxShadow = "0 0 0 .25rem red"
     }else{
-        alert("succesfull")
         main2.style.boxShadow = "none"
         window.location = "/opt-pages/otp.html"
     }
