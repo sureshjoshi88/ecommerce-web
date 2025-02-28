@@ -35,7 +35,7 @@ button{
     color: white !important;
 }
 .heading{
-    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    text-shadow: 0 0 3px #ba923e, 0 0 5px #ba923e;
 }
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
