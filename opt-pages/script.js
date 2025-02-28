@@ -114,7 +114,12 @@ function sumbit(e){
 }
 opt_form.addEventListener("submit",sumbit)
 
+let submit_button = document.getElementById("submit-buton")
+submit_button.addEventListener("click",()=>{
+    window.location="/project for web/home.html"
+})
 
+ 
 
 // for(let i = 1;i<=6;i++){
 //     let otp  =`otp-${[i]}`
