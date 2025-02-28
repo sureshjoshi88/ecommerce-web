@@ -116,8 +116,19 @@ opt_form.addEventListener("submit",sumbit)
 
 let submit_button = document.getElementById("submit-buton")
 submit_button.addEventListener("click",()=>{
-    window.location="/project for web/home.html"
-})
+let otp1 = document.getElementById("otp-1");
+let otp2 = document.getElementById("otp-2");
+let otp3 = document.getElementById("otp-3");
+let otp4 = document.getElementById("otp-4");
+let otp5 = document.getElementById("otp-5");
+let otp6 = document.getElementById("otp-6");
+
+    if(otp1.value.length==1&&otp2.value.length==1&&otp3.value.length==1&&otp4.value.length==1&&otp5.value.length==1&&otp6.value.length==1){
+        window.location="/project for web/home.html"
+    }else{
+        alert("please enter a value")
+    }
+});
 
  
 
