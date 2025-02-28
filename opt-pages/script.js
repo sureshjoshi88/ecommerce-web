@@ -130,7 +130,6 @@ let otp6 = document.getElementById("otp-6");
     }
 });
 
- 
 
 // for(let i = 1;i<=6;i++){
 //     let otp  =`otp-${[i]}`
