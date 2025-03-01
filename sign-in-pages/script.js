@@ -87,7 +87,7 @@ const requestOptions = {
   redirect: "follow"
 };
 
-fetch("http://localhost:3000/api/v1/auth/signin/request", requestOptions)
+fetch(`${base_url}/api/v1/auth/signin/request`, requestOptions)
   .then((response) => response.json())
   .then((result) => console.log(result))
   .catch((error) => console.error(error));
