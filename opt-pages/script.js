@@ -1,3 +1,9 @@
+let uuid = localStorage.getItem("uuid")
+if(!uuid){
+    window.location.href="/sign-in-pages/signin.html"
+}
+
+
 let otp1 = document.getElementById("otp-1");
 let otp2 = document.getElementById("otp-2");
 let otp3 = document.getElementById("otp-3");
