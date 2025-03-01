@@ -96,7 +96,11 @@ fetch(`${base_url}/api/v1/auth/signin/request`, requestOptions)
         window.location = "/opt-pages/otp.html"
         document.getElementById("number-input").value = ""
         document.getElementById("password-input").value = ""
-        
+    }
+    else if(!result.success){
+        console.log(error.explanation[0]);
+    }else{
+        console.log("something went wrong please try again latter");  
     }
   })
   .catch((error) => console.error(error));
