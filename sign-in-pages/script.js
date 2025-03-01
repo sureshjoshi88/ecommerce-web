@@ -70,7 +70,6 @@ main_icon2.addEventListener("click",()=>{
  
 })
 
-
 function getdataapi(mobile,password){
     window.location = "/opt-pages/otp.html"
     const myHeaders = new Headers();
