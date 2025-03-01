@@ -1,4 +1,4 @@
-let base_url = 
+let base_url = "http://localhost:3000";
 function inputdata() {
     let input = document.getElementById("number-input");
     let value = input.value;
