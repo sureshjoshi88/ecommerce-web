@@ -26,7 +26,7 @@ function inputdata() {
         main2.style.boxShadow = "0 0 0 .25rem red"
     }else{
         main2.style.boxShadow = "none"
-        window.location = "/opt-pages/otp.html"
+        getdataapi(value,passwordvalue)
     }
 }
 
@@ -70,3 +70,26 @@ main_icon2.addEventListener("click",()=>{
  
 })
 
+
+function getdataapi(mobile,password){
+    window.location = "/opt-pages/otp.html"
+    const myHeaders = new Headers();
+myHeaders.append("Content-Type", "application/json");
+
+const raw = JSON.stringify({
+  "mobile": mobile,
+  "password": password
+});
+
+const requestOptions = {
+  method: "POST",
+  headers: myHeaders,
+  body: raw,
+  redirect: "follow"
+};
+
+fetch("http://localhost:3000/api/v1/auth/signin/request", requestOptions)
+  .then((response) => response.json())
+  .then((result) => console.log(result))
+  .catch((error) => console.error(error));
+}
