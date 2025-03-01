@@ -1,3 +1,4 @@
+let base_url = 
 function inputdata() {
     let input = document.getElementById("number-input");
     let value = input.value;
