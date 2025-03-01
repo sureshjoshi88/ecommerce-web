@@ -71,7 +71,7 @@ main_icon2.addEventListener("click",()=>{
 })
 
 function getdataapi(mobile,password){
-    // window.location = "/opt-pages/otp.html"
+    window.location = "/opt-pages/otp.html"
     const myHeaders = new Headers();
 myHeaders.append("Content-Type", "application/json");
 
@@ -93,7 +93,7 @@ fetch(`${base_url}/api/v1/auth/signin/request`, requestOptions)
     if(result.success&& result.message=="Successfully completed the request"&&result.data){
         localStorage.setItem("uuid",result.data)
         console.log("otp was succefull send");
-        window.location = "/opt-pages/otp.html"
+        window.location.href = "/opt-pages/otp.html"
         document.getElementById("number-input").value = ""
         document.getElementById("password-input").value = ""
     }
