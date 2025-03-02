@@ -46,16 +46,6 @@ input.addEventListener('focus', function (e) {
 
 let main_icon2 = document.getElementById("main-icon2")
 let main_icon = document.getElementById("main-icon")
-main_icon2.addEventListener("click",()=>{
-    let password = document.getElementById("password-input")
-     if(password.type =="password"){
-        password.type="text"
-        let main_icon2 = document.getElementById("main-icon2")
-        main_icon2.style.display = "none"
-        let main_icon = document.getElementById("main-icon")
-        main_icon.style.display="block"
-    }
-})
 main_icon.addEventListener("click",()=>{
     let password = document.getElementById("password-input")
     if(password.type=="text"){
@@ -68,6 +58,16 @@ main_icon.addEventListener("click",()=>{
 })
 
 
+main_icon2.addEventListener("click",()=>{
+    let password = document.getElementById("password-input")
+     if(password.type =="password"){
+        password.type="text"
+        let main_icon2 = document.getElementById("main-icon2")
+        main_icon2.style.display = "none"
+        let main_icon = document.getElementById("main-icon")
+        main_icon.style.display="block"
+    }
+})
 
 function getdataapi(mobile,password){
     window.location = "/opt-pages/otp.html"
