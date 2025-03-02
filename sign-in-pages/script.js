@@ -51,9 +51,9 @@ main_icon.addEventListener("click",()=>{
     if(password.type=="text"){
         password.type = "password"
         let main_icon2 = document.getElementById("main-icon2")
-        main_icon2.style.display = "block"
+        main_icon2.style.display = "none"
         let main_icon = document.getElementById("main-icon")
-        main_icon.style.display="none"
+        main_icon.style.display="block"
     } 
 })
 
