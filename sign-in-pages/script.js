@@ -67,7 +67,6 @@ main_icon2.addEventListener("click",()=>{
         let main_icon = document.getElementById("main-icon")
         main_icon.style.display="block"
     }
- 
 })
 
 function getdataapi(mobile,password){
