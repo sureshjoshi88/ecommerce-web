@@ -102,5 +102,8 @@ fetch(`${base_url}/api/v1/auth/signin/request`, requestOptions)
         console.log("something went wrong please try again latter");  
     }
   })
-  .catch((error) => console.log(error));
+  .catch((error) => {
+    console.log(error)
+    alert("something went wrong")
+});
 }
