@@ -30,6 +30,8 @@ function inputdata() {
 }
 let submit_butons = document.getElementById("submit-buton").addEventListener("click",()=>{
     inputdata()
+    console.log("SUBMIT");
+    
 })
 
 let inputs = document.getElementById("number-input").focus();
