@@ -1,4 +1,6 @@
-let base_url = "http://localhost:3000";
+// let base_url = "http://localhost:3000";
+import base_url from '../export.js'
+
 function inputdata() {
     let input = document.getElementById("number-input");
     let value = input.value;
