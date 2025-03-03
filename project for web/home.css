@@ -239,6 +239,21 @@
     color: black;
 }
 
+body{
+    overflow-y: hidden;
+}
+
+.loading { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: absolute;
+    z-index: 999;
+    background-color: white;
+    width: 100%;
+}
+
 
 @media (max-width:768px) {
     .main-backgroun-img{
