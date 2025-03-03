@@ -155,6 +155,7 @@ let otp6 = document.getElementById("otp-6");
 //         }
 //     })
 //     otpx.addEventListener("keydown",(e)=>{
+    
 //         if(e.key=="Backspace" && e.target.value.length==0){
 //             document.getElementById(`otp-${[i]}`).blur();
 //             document.getElementById(`otp-${[i-1]}`).focus();
