@@ -239,9 +239,9 @@
     color: black;
 }
 
-body{
+/* body{
     overflow-y: hidden;
-}
+} */
 
 .loading { 
     display: flex;
