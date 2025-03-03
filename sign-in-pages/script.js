@@ -1,4 +1,3 @@
-// let base_url = "http://localhost:3000";
 import base_url from '../export.js'
 
 function inputdata() {
@@ -15,7 +14,7 @@ function inputdata() {
 
     } else {
         input.classList.remove("form-control-after");
-        input.classList.add("form-control-active")
+        input.classList.add("form-control-active")  
     }
     let password = document.getElementById("password-input")
     let passwordvalue = password.value;
@@ -29,6 +28,9 @@ function inputdata() {
         getdataapi(value, passwordvalue)
     }
 }
+let submit_butons = document.getElementById("submit-buton").addEventListener("click",()=>{
+    inputdata()
+})
 
 let inputs = document.getElementById("number-input").focus();
 
@@ -70,7 +72,6 @@ main_icon2.addEventListener("click", () => {
 })
 
 function getdataapi(mobile, password) {
-    window.location = "/otp-pages/otp.html"
     const myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
 
