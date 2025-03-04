@@ -83,30 +83,20 @@ let data = [
     caterogy:"Stylish cafe chair",
     discountprice:2.500000,
     totalprice:3.500000
-  },
-  {
-    images:"imgages/image 1.png",
-    brand:"Syltherine",
-    caterogy:"Stylish cafe chair",
-    discountprice:2500000,
-    totalprice:3500000
-  },
-  {
-    images:"imgages/image 1.png",
-    brand:"Syltherine",
-    caterogy:"Stylish cafe chair",
-    discountprice:"2.500.000",
-    totalprice:"3.500.000"
   }
+
 ]
 
 function addproducts(img,brands,caterogys,totprice,disprice){
   let mainrow = document.getElementById("loder-row");
+  let maindiv = document.createElement("div")
+  maindiv.classList.add("col-sm-12","col-md-6", "col-lg-3", "mt-3")
+
   let childdiv = document.createElement("div")
-  childdiv.classList.add("col-sm-12","col-md-6", "col-lg-3", "mt-3")
 
   let images = document.createElement("img")
   images.src = img
+  images.classList.add("w-100")
   childdiv.appendChild(images)
 
   let brand = document.createElement("h5")
@@ -125,7 +115,9 @@ function addproducts(img,brands,caterogys,totprice,disprice){
   totalprice.innerText = disprice
   totalprice.style.textDecoration="line-through"
   childdiv.appendChild(totalprice)
-  mainrow.appendChild(childdiv)
+
+  maindiv.appendChild(childdiv)
+  mainrow.appendChild(maindiv)
 }
 
 data.map((value,key)=>{
