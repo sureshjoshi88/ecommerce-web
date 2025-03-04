@@ -34,33 +34,100 @@ let data = [
     caterogy:"Stylish cafe chair",
     discountprice:2.500000,
     totalprice:3.500000
+  },
+  {
+    images:"imgages/image 1.png",
+    brand:"Syltherine",
+    caterogy:"Stylish cafe chair",
+    discountprice:2.500000,
+    totalprice:3.500000
+  },
+  {
+    images:"imgages/image 1.png",
+    brand:"Syltherine",
+    caterogy:"Stylish cafe chair",
+    discountprice:2.500000,
+    totalprice:3.500000
+  },
+  {
+    images:"imgages/image 1.png",
+    brand:"Syltherine",
+    caterogy:"Stylish cafe chair",
+    discountprice:2.500000,
+    totalprice:3.500000
+  },
+  {
+    images:"imgages/image 1.png",
+    brand:"Syltherine",
+    caterogy:"Stylish cafe chair",
+    discountprice:2.500000,
+    totalprice:3.500000
+  },
+  {
+    images:"imgages/image 1.png",
+    brand:"Syltherine",
+    caterogy:"Stylish cafe chair",
+    discountprice:2.500000,
+    totalprice:3.500000
+  },
+  {
+    images:"imgages/image 1.png",
+    brand:"Syltherine",
+    caterogy:"Stylish cafe chair",
+    discountprice:2.500000,
+    totalprice:3.500000
+  },
+  {
+    images:"imgages/image 1.png",
+    brand:"Syltherine",
+    caterogy:"Stylish cafe chair",
+    discountprice:2.500000,
+    totalprice:3.500000
+  },
+  {
+    images:"imgages/image 1.png",
+    brand:"Syltherine",
+    caterogy:"Stylish cafe chair",
+    discountprice:2.500000,
+    totalprice:3.500000
+  },
+  {
+    images:"imgages/image 1.png",
+    brand:"Syltherine",
+    caterogy:"Stylish cafe chair",
+    discountprice:2.500000,
+    totalprice:3.500000
   }
 ]
 
-function addproducts(){
+function addproducts(img,brands,caterogys,totprice,disprice){
   let mainrow = document.getElementById("loder-row");
   let childdiv = document.createElement("div")
+  childdiv.classList.add("col-sm-12")
 
   let images = document.createElement("img")
-  images.src = "imgages/image 1.png"
+  images.src = img
   childdiv.appendChild(images)
 
   let brand = document.createElement("h5")
-  brand.innerText="sadiu"
+  brand.innerText = brands
   childdiv.appendChild(brand)
 
   let categroy = document.createElement("p")
-  categroy.innerText = "sjids"
+  categroy.innerText = caterogys
   childdiv.appendChild(categroy)
   
   let discountprice = document.createElement("h6")
-  discountprice.innerText = "987654"
+  discountprice.innerText = totprice
   childdiv.appendChild(discountprice)
 
   let totalprice = document.createElement("p")
-  totalprice.innerText = "87898787"
-  totalprice.style.textDecoration="linethrow"
+  totalprice.innerText = disprice
+  totalprice.style.textDecoration="line-through"
   childdiv.appendChild(totalprice)
   mainrow.appendChild(childdiv)
 }
-addproducts();
+
+data.map((value,key)=>{
+  addproducts(value.images,value.brand,value.caterogy,value.discountprice,value.totalprice);
+})
