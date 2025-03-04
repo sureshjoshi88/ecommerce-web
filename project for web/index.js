@@ -13,14 +13,17 @@ const requestOptions = {
 fetch("https://admin-dev-backend.edvice.in/ping", requestOptions)
   .then((response) => response.json())
   .then((result) => {
-    if(result.success){
+    // if(result.success){
         let body = document.getElementsByTagName("body")
         body[0].children[0].remove();
-    }else{
-        window.location.href="/sign-in-pages/signin.html"
-        console.log(result.error.explanation);
-    }
+        body[0].style.overflowY="scroll"
+    // }else{
+    //     window.location.href="/sign-in-pages/signin.html"
+    //     console.log(result.error.explanation);
+    // }
   })
   .catch((error) => console.error(error));
 }
 isuserauthicated();
+
+
