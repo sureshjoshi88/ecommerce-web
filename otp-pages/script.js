@@ -105,6 +105,8 @@ otp6.addEventListener("keydown",(e)=>{
         document.getElementById("otp-5").focus();
     }
 })
+let reset_otp = document.getElementById("opt-reset")
+reset_otp.style.display="none"
 let value = document.getElementById("counter")
 let counter = 60;
 setInterval(() => {
@@ -112,6 +114,10 @@ setInterval(() => {
     value.innerText = counter
     if(counter>=0){
         clearInterval(counter)
+    }
+    if(counter==1){
+        reset_otp.style.display="block"
+    
     }
 }, 1000);
 
