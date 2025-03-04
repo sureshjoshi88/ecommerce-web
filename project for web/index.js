@@ -103,7 +103,7 @@ let data = [
 function addproducts(img,brands,caterogys,totprice,disprice){
   let mainrow = document.getElementById("loder-row");
   let childdiv = document.createElement("div")
-  childdiv.classList.add("col-sm-12")
+  childdiv.classList.add("col-sm-12"," col-md-6", "col-lg-3", "mt-3")
 
   let images = document.createElement("img")
   images.src = img
