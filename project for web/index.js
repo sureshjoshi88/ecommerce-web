@@ -1,3 +1,8 @@
+let uuid = localStorage.getItem("uuid")
+if(!uuid){
+    window.location.href="/sign-in-pages/signin.html"
+}
+
 function isuserauthicated(){
  const myHeaders = new Headers();
 myHeaders.append("Authorization", "Bearer sa d,jnsaudsbsaxudnfbdmbcudfcia,bufvdkshkaihfbjdudshfkjdsfkdsakdsakmxidahfufdjf");
