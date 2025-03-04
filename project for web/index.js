@@ -27,3 +27,16 @@ fetch("https://admin-dev-backend.edvice.in/ping", requestOptions)
 isuserauthicated();
 
 
+let data = [
+  {
+    images:"",
+    brand:"Syltherine",
+    caterogy:"Stylish cafe chair",
+    discountprice:2.500000,
+    totalprice:3.500000
+  }
+]
+
+function addproducts(){
+  let mainrow = document.getElementsById("loder-row");
+}
