@@ -1,7 +1,4 @@
-let uuid = localStorage.getItem("uuid")
-if(!uuid){
-    window.location.href="/sign-in-pages/signin.html"
-}
+
 
 function isuserauthicated(){
  const myHeaders = new Headers();
@@ -13,7 +10,7 @@ const requestOptions = {
   redirect: "follow"
 };
 
-fetch("http://localhost:3000/api/v1/auth/signin/request", requestOptions)
+fetch("https://admin-dev-backend.edvice.in/ping", requestOptions)
   .then((response) => response.json())
   .then((result) => {
     if(result.success){
