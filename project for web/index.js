@@ -29,7 +29,7 @@ isuserauthicated();
 
 let data = [
   {
-    images:"",
+    images:"imgages/image 1.png",
     brand:"Syltherine",
     caterogy:"Stylish cafe chair",
     discountprice:2.500000,
@@ -38,5 +38,29 @@ let data = [
 ]
 
 function addproducts(){
-  let mainrow = document.getElementsById("loder-row");
+  let mainrow = document.getElementById("loder-row");
+  let childdiv = document.createElement("div")
+
+  let images = document.createElement("img")
+  images.src = "imgages/image 1.png"
+  childdiv.appendChild(images)
+
+  let brand = document.createElement("h5")
+  brand.innerText="sadiu"
+  childdiv.appendChild(brand)
+
+  let categroy = document.createElement("p")
+  categroy.innerText = "sjids"
+  childdiv.appendChild(categroy)
+  
+  let discountprice = document.createElement("h6")
+  discountprice.innerText = "987654"
+  childdiv.appendChild(discountprice)
+
+  let totalprice = document.createElement("p")
+  totalprice.innerText = "87898787"
+  totalprice.style.textDecoration="linethrow"
+  childdiv.appendChild(totalprice)
+  mainrow.appendChild(childdiv)
 }
+addproducts();
