@@ -19,7 +19,6 @@ fetch("https://admin-dev-backend.edvice.in/ping", requestOptions)
     }else{
         window.location.href="/sign-in-pages/signin.html"
         console.log(result.error.explanation);
-        
     }
   })
   .catch((error) => console.error(error));
