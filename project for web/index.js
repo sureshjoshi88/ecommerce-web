@@ -175,7 +175,6 @@ function homeproducts(){
               </div></a>
               </div>
       `
-    
     })
   }, 2000);
 }
