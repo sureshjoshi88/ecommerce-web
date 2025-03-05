@@ -133,7 +133,7 @@ setTimeout(() => {
               <p class="opacity-75">${value.caterogy}</p>
               <div class="d-flex gap-2 align-items-center img-detailes">
                 <p class="fw-bolder">${value.discountprice}</p>
-                <p class="opacity-75 linethrow">${value.totalprice}</p>
+                <p class="opacity-75 linethrow">${value.totalprice?value.totalprice:" "}</p>
               </div>
              </div>
               <div class="abs-for-blur-child">
