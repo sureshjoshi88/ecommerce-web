@@ -33,7 +33,8 @@ let data = [
     brand:"Syltherine",
     caterogy:"Stylish cafe chair",
     discountprice:"2.500.000",
-    totalprice:"3.500.000"
+    totalprice:"3.500.000",
+    discountpersent:"-30%"
   },
   {
     images:"imgages/image 2.png",
@@ -46,7 +47,9 @@ let data = [
     brand:"Lolito",
     caterogy:"Luxury big sofa",
     discountprice:"Rp 7.000.000",
-    totalprice:"14.000.000"
+    totalprice:"14.000.000",
+    discountpersent:"-50%"
+
   },
   {
     images:"imgages/image 4.png",
@@ -127,6 +130,9 @@ setTimeout(() => {
              <a href="/single pruducts/products.html" class="main-for-anker-tag"> <div class="main-for-cart">
               <div class="position-relative h-100">
                 <img width="100%" class="imgahes-div-js" src="${value.images}" alt="">
+                 <div class="abs-div-img">
+                <p class="pt-3">-30%</p>
+              </div>
               </div>
              <div class="ps-2">
               <h5 class="pt-2">${value.brand}</h5>
