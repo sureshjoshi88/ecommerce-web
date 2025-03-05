@@ -123,10 +123,10 @@ setTimeout(() => {
   data.map((value,key)=>{
     let mainrow = document.getElementById("loder-row")
     mainrow.innerHTML += `
-      <div class="col-sm-12 col-md-6 col-lg-3 mt-3 ">
+      <div class="col-sm-12 col-md-6 col-lg-3 mt-3">
              <a href="/single pruducts/products.html" class="main-for-anker-tag"> <div class="main-for-cart">
               <div class="position-relative h-100">
-                <img width="100%" style="height:300px" src="${value.images}" alt="">
+                <img width="100%" class="imgahes-div-js" src="${value.images}" alt="">
               </div>
              <div class="ps-2">
               <h5 class="pt-2">${value.brand}</h5>

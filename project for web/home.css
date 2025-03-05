@@ -170,6 +170,10 @@
     object-fit: cover;
 }
 
+.imgahes-div-js{
+    height: 300px;
+}
+
 @media (min-width:1400px) {
     .bg-imgage-forblur{
         height: 50vh;
@@ -292,6 +296,9 @@ body{
   .imgages-1foter{
     object-fit: cover;
     height: 60vh;
+}
+.imgahes-div-js{
+    height: auto;
 }
 }
 @media (max-width:992px) {
