@@ -41,6 +41,8 @@ let data = [
     brand:"Leviosa",
     caterogy:"Stylish cafe chair",
     discountprice:"2.500000",
+    discountpersent:"New"
+
   },
   {
     images:"imgages/Images.png",
