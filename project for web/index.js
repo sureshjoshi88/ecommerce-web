@@ -65,6 +65,7 @@ let data = [
     brand:"Grifo",
     caterogy:"Night lamp",
     discountprice:"1.500.000",
+    discountpersent:"New"
   },
   {
     images:"imgages/Images (2).png",
