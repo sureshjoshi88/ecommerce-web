@@ -22,7 +22,12 @@ fetch("https://admin-dev-backend.edvice.in/ping", requestOptions)
     //     console.log(result.error.explanation);
     // }
   })
-  .catch((error) => console.log(error));
+  .catch((error) =>{
+     console.log(error)
+     let body = document.getElementsByTagName("body")
+     body.innerHTML = "some thing went wrong please try again"
+
+    });
 }
 isuserauthicated();
 
