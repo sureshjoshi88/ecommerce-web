@@ -178,7 +178,7 @@ function homeproducts(){
               </div></a>
               </div>
       `
-    })
-  }, 2000);
+    });
+  }, 3000);
 }
 homeproducts();
