@@ -10,7 +10,7 @@ const requestOptions = {
   redirect: "follow"
 };
 
-fetch("https://admin-dev-backend.edvice.in/ping", requestOptions)
+fetch("https://admin-dev-backend.edvice.in/pin", requestOptions)
   .then((response) => response.json())
   .then((result) => {
     // if(result.success){
@@ -24,8 +24,6 @@ fetch("https://admin-dev-backend.edvice.in/ping", requestOptions)
   })
   .catch((error) =>{
      console.log(error)
-     let body = document.getElementsByTagName("body")
-     body.innerHTML = "some thing went wrong please try again"
 
     });
 }
