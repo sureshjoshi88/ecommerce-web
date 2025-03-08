@@ -133,7 +133,6 @@ let data = [
 // }
 
 function homeproducts(){
-
   setTimeout(() => {
     let mainrow = document.getElementById("loder-row")
     mainrow.innerHTML = " "
@@ -141,7 +140,8 @@ function homeproducts(){
     data.map((value,key)=>{
       let mainrow = document.getElementById("loder-row")
       mainrow.innerHTML += `
-        <div class="col-sm-12 col-md-6 col-lg-3 mt-3">
+        <div class="col-sm-12 col-md-6 col-lg-3 mt-3 ">
+              <div class="p-1">
                <a href="/single pruducts/products.html" class="main-for-anker-tag"> <div class="main-for-cart">
                 <div class="position-relative h-100">
                   <img width="100%" class="imgahes-div-js" src="${value.images}" alt="">
@@ -179,6 +179,7 @@ function homeproducts(){
                  </div>
                 </div>
               </div></a>
+              </div>
               </div>
       `
     });
