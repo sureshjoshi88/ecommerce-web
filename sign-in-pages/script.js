@@ -74,10 +74,12 @@ main_icon2.addEventListener("click", () => {
 })
 
 function getdataapi(mobile, password) {
+
     const myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
 
     const raw = JSON.stringify({
+        
         "mobile": mobile,
         "password": password
     });

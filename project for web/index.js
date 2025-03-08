@@ -10,7 +10,7 @@ const requestOptions = {
   redirect: "follow"
 };
 
-fetch("https://admin-dev-backend.edvice.in/pin", requestOptions)
+fetch("https://admin-dev-backend.edvice.in/ping", requestOptions)
   .then((response) => response.json())
   .then((result) => {
     // if(result.success){
