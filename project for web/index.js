@@ -1,29 +1,29 @@
 
 
-function isuserauthicated(){
- const myHeaders = new Headers();
-myHeaders.append("Authorization", "Bearer sa d,jnsaudsbsaxudnfbdmbcudfcia,bufvdkshkaihfbjdudshfkjdsfkdsakdsakmxidahfufdjf");
+function isuserauthicated() {
+  const myHeaders = new Headers();
+  myHeaders.append("Authorization", "Bearer sa d,jnsaudsbsaxudnfbdmbcudfcia,bufvdkshkaihfbjdudshfkjdsfkdsakdsakmxidahfufdjf");
 
-const requestOptions = {
-  method: "GET",
-  headers: myHeaders,
-  redirect: "follow"
-};
+  const requestOptions = {
+    method: "GET",
+    headers: myHeaders,
+    redirect: "follow"
+  };
 
-fetch("https://admin-dev-backend.edvice.in/ping", requestOptions)
-  .then((response) => response.json())
-  .then((result) => {
-    // if(result.success){
-        let body = document.getElementsByTagName("body")
-        body[0].children[0].remove();
-        body[0].style.overflowY="scroll"
-    // }else{
-    //     window.location.href="/sign-in-pages/signin.html"
-    //     console.log(result.error.explanation);
-    // }
-  })
-  .catch((error) =>{
-     console.log(error)
+  fetch("https://admin-dev-backend.edvice.in/ping", requestOptions)
+    .then((response) => response.json())
+    .then((result) => {
+      // if(result.success){
+      let body = document.getElementsByTagName("body")
+      body[0].children[0].remove();
+      body[0].style.overflowY = "scroll"
+      // }else{
+      //     window.location.href="/sign-in-pages/signin.html"
+      //     console.log(result.error.explanation);
+      // }
+    })
+    .catch((error) => {
+      console.log(error)
 
     });
 }
@@ -32,69 +32,69 @@ isuserauthicated();
 
 let data = [
   {
-    images:"imgages/image 1.png",
-    brand:"Syltherine",
-    caterogy:"Stylish cafe chair",
-    discountprice:"2.500.000",
-    totalprice:"3.500.000",
-    discountpersent:"-30%"
+    images: "imgages/image 1.png",
+    brand: "Syltherine",
+    caterogy: "Stylish cafe chair",
+    discountprice: "2.500.000",
+    totalprice: "3.500.000",
+    discountpersent: "-30%"
   },
   {
-    images:"imgages/image 2.png",
-    brand:"Leviosa",
-    caterogy:"Stylish cafe chair",
-    discountprice:"2.500000",
-    discountpersent:"New"
+    images: "imgages/image 2.png",
+    brand: "Leviosa",
+    caterogy: "Stylish cafe chair",
+    discountprice: "2.500000",
+    discountpersent: "New"
 
   },
   {
-    images:"imgages/Images.png",
-    brand:"Lolito",
-    caterogy:"Luxury big sofa",
-    discountprice:"Rp 7.000.000",
-    totalprice:"14.000.000",
-    discountpersent:"-50%"
+    images: "imgages/Images.png",
+    brand: "Lolito",
+    caterogy: "Luxury big sofa",
+    discountprice: "Rp 7.000.000",
+    totalprice: "14.000.000",
+    discountpersent: "-50%"
 
   },
   {
-    images:"imgages/image 4.png",
-    brand:"Syltherine",
-    caterogy:"Stylish cafe chair",
-    discountprice:"2.500000",
-    totalprice:"3.500000",
-    discountpersent:"New"
+    images: "imgages/image 4.png",
+    brand: "Syltherine",
+    caterogy: "Stylish cafe chair",
+    discountprice: "2.500000",
+    totalprice: "3.500000",
+    discountpersent: "New"
 
   },
   {
-    images:"imgages/image 101.png",
-    brand:"Grifo",
-    caterogy:"Night lamp",
-    discountprice:"1.500.000",
-    discountpersent:"New"
+    images: "imgages/image 101.png",
+    brand: "Grifo",
+    caterogy: "Night lamp",
+    discountprice: "1.500.000",
+    discountpersent: "New"
   },
   {
-    images:"imgages/Images (2).png",
-    brand:"Muggo",
-    caterogy:"Small mug",
+    images: "imgages/Images (2).png",
+    brand: "Muggo",
+    caterogy: "Small mug",
     discountprice: "150.000",
-    discountpersent:"New"
+    discountpersent: "New"
 
   },
   {
-    images:"imgages/image 7.png",
-    brand:"Pingky",
-    caterogy:"Cute bed set",
-    discountprice:"7.000.000",
-    totalprice:"14.000.000",
-    discountpersent:"-50%"
+    images: "imgages/image 7.png",
+    brand: "Pingky",
+    caterogy: "Cute bed set",
+    discountprice: "7.000.000",
+    totalprice: "14.000.000",
+    discountpersent: "-50%"
 
   },
   {
-    images:"imgages/image 8.png",
-    brand:"Potty",
-    caterogy:"Minimalist flower pot",
-    discountprice:"500.000",
-    discountpersent:"New"
+    images: "imgages/image 8.png",
+    brand: "Potty",
+    caterogy: "Minimalist flower pot",
+    discountprice: "500.000",
+    discountpersent: "New"
   }
 
 ]
@@ -118,7 +118,7 @@ let data = [
 //   let categroy = document.createElement("p")
 //   categroy.innerText = caterogys
 //   childdiv.appendChild(categroy)
-  
+
 //   let discountprice = document.createElement("h6")
 //   discountprice.innerText = totprice
 //   childdiv.appendChild(discountprice)
@@ -132,12 +132,12 @@ let data = [
 //   mainrow.appendChild(maindiv)
 // }
 
-function homeproducts(){
+function homeproducts() {
   setTimeout(() => {
     let mainrow = document.getElementById("loder-row")
     mainrow.innerHTML = " "
-    
-    data.map((value,key)=>{
+
+    data.map((value, key) => {
       let mainrow = document.getElementById("loder-row")
       mainrow.innerHTML += `
         <div class="col-sm-12 col-md-6 col-lg-3 mt-3 ">
@@ -146,7 +146,7 @@ function homeproducts(){
                 <div class="position-relative h-100">
                   <img width="100%" class="imgahes-div-js" src="${value.images}" alt="">
                    <div class="abs-div-img">
-                  <p class="pt-3">${value.discountpersent?value.discountpersent:" "}</p>
+                  <p class="pt-3">${value.discountpersent ? value.discountpersent : " "}</p>
                 </div>
                 </div>
                <div class="ps-2">
@@ -154,7 +154,7 @@ function homeproducts(){
                 <p class="opacity-75">${value.caterogy}</p>
                 <div class="d-flex gap-2 align-items-center img-detailes">
                   <p class="fw-bolder">${value.discountprice}</p>
-                  <p class="opacity-75 linethrow">${value.totalprice?value.totalprice:" "}</p>
+                  <p class="opacity-75 linethrow">${value.totalprice ? value.totalprice : " "}</p>
                 </div>
                </div>
                 <div class="abs-for-blur-child">
