@@ -116,6 +116,8 @@ textarea{
     color: white;
     background-color: #ba923e;
     border: none;
-    border-radius: 4px;
-    
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+
 }
