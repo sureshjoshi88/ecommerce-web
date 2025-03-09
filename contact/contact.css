@@ -111,10 +111,11 @@ textarea{
     padding: 4px;
 }
 .sumbit-vuton-part3{
-    height: 9vh;
-    width: 12rem;
+    height: 8vh;
+    width: 11rem;
     color: white;
     background-color: #ba923e;
     border: none;
     border-radius: 4px;
+    
 }
