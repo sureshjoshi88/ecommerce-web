@@ -108,42 +108,47 @@ otp6.addEventListener("keydown",(e)=>{
 let reset_otp = document.getElementById("opt-reset")
 reset_otp.style.display="none"
 let value = document.getElementById("counter")
-// let counter = 60;
-// setInterval(() => {
-//     counter--;
-//     value.innerText = counter
-//     if(counter>=0){
-//         clearInterval(counter)
-//     }
-//     if(counter==1){
-//         reset_otp.style.display="block"
+function startTimer(counter){
+  let settimer =   setInterval(() => {
+        let minutes = Math.floor(counter/60)    
+        let second = Math.floor(counter%60)    
     
-//     }
-// }, 1000);
-
-
-function startTimer(durationInSeconds) {
-    let timeLeft = durationInSeconds;
-    
-    const timerInterval = setInterval(() => {
-        let minutes = Math.floor(timeLeft / 60);
-        let seconds = timeLeft % 60;
-
-        // console.log(`${minutes}:${seconds < 10 ? '0' : ''}${seconds}`);
-        value.innerText = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`
-
-        if (timeLeft <= 0) {
-            clearInterval(timerInterval);
-            // console.log("⏳ Time's up!");
-                    reset_otp.style.display="block"
-                    value.style.display = "none"
-                    let curser = document.querySelector(".curser").innerText="";
-          
+        value.innerText = `${minutes}:${second<10?"0":""}${second}`
+        if(counter<=0){
+            clearInterval(settimer)
+            reset_otp.style.display="block"
+            value.style.display = "none"
+            let curser = document.querySelector(".curser").innerText="";
         }
-
-        timeLeft--;
+       
+        counter--;
     }, 1000);
 }
+settimer(10);
+
+
+// function startTimer(durationInSeconds) {
+//     let timeLeft = durationInSeconds;
+    
+//     const timerInterval = setInterval(() => {
+//         let minutes = Math.floor(timeLeft / 60);
+//         let seconds = timeLeft % 60;
+
+//         // console.log(`${minutes}:${seconds < 10 ? '0' : ''}${seconds}`);
+//         value.innerText = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`
+
+//         if (timeLeft <= 0) {
+//             clearInterval(timerInterval);
+//             // console.log("⏳ Time's up!");
+//                     reset_otp.style.display="block"
+//                     value.style.display = "none"
+//                     let curser = document.querySelector(".curser").innerText="";
+          
+//         }
+
+//         timeLeft--;
+//     }, 1000);
+// }
 
 // 2 मिनट का टाइमर (120 सेकंड)
 startTimer(120);
