@@ -135,6 +135,9 @@ function startTimer(durationInSeconds) {
         if (timeLeft <= 0) {
             clearInterval(timerInterval);
             // console.log("⏳ Time's up!");
+                    reset_otp.style.display="block"
+                    value.style.display = "none"
+                    let curser = document.querySelector(".curser").innerText="";
           
         }
 
