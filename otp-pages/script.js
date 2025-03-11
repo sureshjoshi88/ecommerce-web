@@ -112,7 +112,6 @@ function startTimer(counter){
   let settimer =   setInterval(() => {
         let minutes = Math.floor(counter/60)    
         let second = Math.floor(counter%60)    
-    
         value.innerText = `${minutes}:${second<10?"0":""}${second}`
         if(counter<=0){
             clearInterval(settimer)
@@ -120,11 +119,10 @@ function startTimer(counter){
             value.style.display = "none"
             let curser = document.querySelector(".curser").innerText="";
         }
-       
         counter--;
     }, 1000);
 }
-settimer(10);
+settimer(120);
 
 
 // function startTimer(durationInSeconds) {
@@ -151,7 +149,7 @@ settimer(10);
 // }
 
 // 2 मिनट का टाइमर (120 सेकंड)
-startTimer(120);
+// startTimer(120);
 
 
 let opt_form = document.getElementById("sumbit-otp")
