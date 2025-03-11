@@ -122,7 +122,7 @@ function startTimer(counter){
         counter--;
     }, 1000);
 }
-settimer(120);
+startTimer(120);
 
 
 // function startTimer(durationInSeconds) {
