@@ -28,7 +28,8 @@ function inputdata() {
         getdataapi(value, passwordvalue)
     }
 }
-let submit_butons = document.getElementById("submit-buton").addEventListener("click",()=>{
+let submit_butons = document.getElementById("submit-buton");
+submit_butons.addEventListener("click",()=>{
     inputdata()
     console.log("SUBMIT");
     
