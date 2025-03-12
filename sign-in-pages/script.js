@@ -14,7 +14,7 @@ function inputdata() {
 
     } else {
         input.classList.remove("form-control-after");
-        input.classList.add("form-control-active")  
+        input.classList.add("form-control-active")
     }
     let password = document.getElementById("password-input")
     let passwordvalue = password.value;
@@ -29,10 +29,10 @@ function inputdata() {
     }
 }
 let submit_butons = document.getElementById("submit-buton");
-submit_butons.addEventListener("click",()=>{
+submit_butons.addEventListener("click", () => {
     inputdata()
     console.log("SUBMIT");
-    
+
 })
 
 let inputs = document.getElementById("number-input").focus();
@@ -80,7 +80,7 @@ function getdataapi(mobile, password) {
     myHeaders.append("Content-Type", "application/json");
 
     const raw = JSON.stringify({
-        
+
         "mobile": mobile,
         "password": password
     });
