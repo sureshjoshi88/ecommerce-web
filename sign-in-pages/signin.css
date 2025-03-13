@@ -46,6 +46,7 @@
     border-radius: 20px;
     padding: 7px;
     color: black;
+    /* box-shadow: 0 0 0 .09rem  #c48909; */
 }
 .ram2 input {
     border: none;
@@ -56,6 +57,10 @@
     border-radius: 20px;
     padding: 7px;
     color: black;
+}
+input:focus{
+    box-shadow: 0 0 0 .09rem  #c48909;
+
 }
 .curser-pointer-icon{
   cursor: pointer;
