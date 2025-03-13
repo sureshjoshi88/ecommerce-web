@@ -206,8 +206,13 @@
 .button-for-foter-part{
     border: 1.5px solid #ba923e;
     color: #ba923e;
+    font-size: 18px;
+    font-weight: 600;
 }
-.button-for-foter-part
+.button-for-foter-part:hover{
+    background-color: #ba923e;
+    color: white;
+}
 @media (max-width:992px) {
     .navbar-gap{
         gap: 7px !important;
