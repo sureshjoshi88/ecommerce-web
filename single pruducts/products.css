@@ -203,7 +203,11 @@
     margin-top: 19px;
 }
 
-
+.button-for-foter-part{
+    border: 1.5px solid #ba923e;
+    color: #ba923e;
+}
+.button-for-foter-part
 @media (max-width:992px) {
     .navbar-gap{
         gap: 7px !important;
