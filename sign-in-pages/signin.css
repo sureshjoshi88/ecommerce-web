@@ -58,8 +58,12 @@
     padding: 7px;
     color: black;
 }
-input:focus{
-    box-shadow: 0 0 0 .09rem  #c48909;
+.ram input:focus{
+    box-shadow: 0 0 0 .09rem  #c48909 ;
+
+}
+.ram2:hover{
+    box-shadow: 0 0 0 .09rem  #c48909 !important;
 
 }
 .curser-pointer-icon{
