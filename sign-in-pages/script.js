@@ -11,7 +11,6 @@ function inputdata() {
         alert("mobile number must start with 6,7,8,9")
         input.focus()
         input.classList.add("form-control-after")
-
     } else {
         input.classList.remove("form-control-after");
         input.classList.add("form-control-active")
@@ -31,13 +30,8 @@ function inputdata() {
 let submit_butons = document.getElementById("submit-buton");
 submit_butons.addEventListener("click", () => {
     inputdata()
-    console.log("SUBMIT");
-
 })
-
 let inputs = document.getElementById("number-input").focus();
-
-
 let forms = document.getElementById("sumbit-form")
 function sumbit(event) {
     event.preventDefault();
@@ -47,8 +41,6 @@ let input = document.getElementById("number-input");
 input.addEventListener('focus', function (e) {
     this.style.boxShadow = "0 0 0 .25rem red"
 })
-
-
 let main_icon2 = document.getElementById("main-icon2")
 let main_icon = document.getElementById("main-icon")
 main_icon.addEventListener("click", () => {
@@ -61,8 +53,6 @@ main_icon.addEventListener("click", () => {
         main_icon.style.display = "none"
     }
 })
-
-
 main_icon2.addEventListener("click", () => {
     let password = document.getElementById("password-input")
     if (password.type == "text") {
@@ -73,14 +63,11 @@ main_icon2.addEventListener("click", () => {
         main_icon.style.display = "block"
     }
 })
-
 function getdataapi(mobile, password) {
-
     const myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
 
     const raw = JSON.stringify({
-
         "mobile": mobile,
         "password": password
     });
