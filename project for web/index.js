@@ -142,7 +142,7 @@ function homeproducts() {
       mainrow.innerHTML += `
         <div class="col-sm-12 col-md-6 col-lg-3 mt-3 ">
               <div class="p-1">
-               <a href="/single pruducts/products.html" class="main-for-anker-tag"> <div class="main-for-cart">
+               <div class="main-for-anker-tag"> <div class="main-for-cart">
                 <div class="position-relative h-100">
                   <img width="100%" class="imgahes-div-js" src="${value.images}" alt="">
                    <div class="abs-div-img">
@@ -178,7 +178,8 @@ function homeproducts() {
                   </div>
                  </div>
                 </div>
-              </div></a>
+              </div>
+              </div>
               </div>
               </div>
       `
@@ -186,3 +187,9 @@ function homeproducts() {
   }, 2000);
 }
 homeproducts();
+
+
+
+
+  
+
