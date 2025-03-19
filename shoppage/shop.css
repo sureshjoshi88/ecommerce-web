@@ -212,6 +212,9 @@
     text-decoration: none;
     color: black;
 }
+.setcolor{
+    color: #ba923e;
+}
 
 @media (max-width:992px) {
     .navbar-gap{

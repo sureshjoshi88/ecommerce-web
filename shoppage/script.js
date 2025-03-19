@@ -39,6 +39,7 @@ function getdata(){
         products.innerText = value.price;
         let products1 = document.createElement("h6")
         products1.innerText = value.price2;
+        products1.classList.add("setcolor");
         childiv.appendChild(products)
         childiv.appendChild(products1)
        
