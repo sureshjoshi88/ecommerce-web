@@ -69,7 +69,6 @@ button.addEventListener("click", () => {
     getdata()
 
 })
-// console.log("hello");
 
 function getdata() {
     let carts = JSON.parse(localStorage.getItem("cart")) || [];
