@@ -27,24 +27,24 @@ let data = [
         discountpersent: "-50%"
 
     },
-    {
-        id: 4,
-        images: "imgae-for-shop/image 4.png",
-        brand: "Syltherine",
-        caterogy: "Stylish cafe chair",
-        discountprice: "2.500000",
-        totalprice: "3.500000",
-        discountpersent: "New"
+    // {
+    //     id: 4,
+    //     images: "imgae-for-shop/image 4.png",
+    //     brand: "Syltherine",
+    //     caterogy: "Stylish cafe chair",
+    //     discountprice: "2.500000",
+    //     totalprice: "3.500000",
+    //     discountpersent: "New"
 
-    },
-    {
-        id: 5,
-        images: "imgae-for-shop/image 101.png",
-        brand: "Grifo",
-        caterogy: "Night lamp",
-        discountprice: "1.500.000",
-        discountpersent: "New"
-    }
+    // },
+    // {
+    //     id: 5,
+    //     images: "imgae-for-shop/image 101.png",
+    //     brand: "Grifo",
+    //     caterogy: "Night lamp",
+    //     discountprice: "1.500.000",
+    //     discountpersent: "New"
+    // }
 ]
 
 let button = document.getElementById("main-buton-shop")
@@ -76,7 +76,7 @@ function getdata() {
     let main = document.getElementById("shop-tofle-div")
     main.innerHTML = "";
     carts.map((value, index) => {
-            console.log(value);
+            // console.log(value);
             
         let maindiv = document.createElement("div")
         maindiv.classList.add("d-flex", "gap-5", "align-items-center", "p-2")
@@ -98,15 +98,9 @@ function getdata() {
         let delte = document.createElement("button")
         delte.classList.add("border", "btn", "btn-danger")
         delte.innerText = "X"
-        delte.addEventListener("click", (e) => {
-            // console.log(e.id);
-            let ids = e.target.parentElement
-            // console.log(ids);
-            // localStorage.removeItem("cart")
+        delte.addEventListener("click", () => {
             
-
-            
-            
+        removeItem(value.id)
             getdata();
         })
         maindiv.appendChild(img)
@@ -116,6 +110,11 @@ function getdata() {
 
 
     })
+}
+function removeItem(id){
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+     cart = cart.filter((value)=>value.id!=id)
+     localStorage.setItem("cart",JSON.stringify(cart))
 }
 getdata();
 
