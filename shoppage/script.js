@@ -1,3 +1,47 @@
+let data = [
+    {
+      images: "imgages/image 1.png",
+      brand: "Syltherine",
+      caterogy: "Stylish cafe chair",
+      discountprice: "2.500.000",
+      totalprice: "3.500.000",
+      discountpersent: "-30%"
+    },
+    {
+      images: "imgages/image 2.png",
+      brand: "Leviosa",
+      caterogy: "Stylish cafe chair",
+      discountprice: "2.500000",
+      discountpersent: "New"
+  
+    },
+    {
+      images: "imgages/Images.png",
+      brand: "Lolito",
+      caterogy: "Luxury big sofa",
+      discountprice: "Rp 7.000.000",
+      totalprice: "14.000.000",
+      discountpersent: "-50%"
+  
+    },
+    {
+      images: "imgages/image 4.png",
+      brand: "Syltherine",
+      caterogy: "Stylish cafe chair",
+      discountprice: "2.500000",
+      totalprice: "3.500000",
+      discountpersent: "New"
+  
+    },
+    {
+      images: "imgages/image 101.png",
+      brand: "Grifo",
+      caterogy: "Night lamp",
+      discountprice: "1.500.000",
+      discountpersent: "New"
+    }
+]
+
 let button = document.getElementById("main-buton-shop")
 button.addEventListener("click",()=>{
     function setdata(id,img,price,price2){
