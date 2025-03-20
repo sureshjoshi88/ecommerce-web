@@ -1,7 +1,7 @@
 let data = [
     {
         id: 1,
-        images: "imgages/image 1.png",
+        images: "imgae-for-shop/image 1.png",
         brand: "Syltherine",
         caterogy: "Stylish cafe chair",
         discountprice: "2.500.000",
@@ -10,7 +10,7 @@ let data = [
     },
     {
         id: 2,
-        images: "imgages/image 2.png",
+        images: "imgae-for-shop/image 2.png",
         brand: "Leviosa",
         caterogy: "Stylish cafe chair",
         discountprice: "2.500000",
@@ -19,7 +19,7 @@ let data = [
     },
     {
         id: 3,
-        images: "imgages/Images.png",
+        images: "imgae-for-shop/Images.png",
         brand: "Lolito",
         caterogy: "Luxury big sofa",
         discountprice: "Rp 7.000.000",
@@ -29,7 +29,7 @@ let data = [
     },
     {
         id: 4,
-        images: "imgages/image 4.png",
+        images: "imgae-for-shop/image 4.png",
         brand: "Syltherine",
         caterogy: "Stylish cafe chair",
         discountprice: "2.500000",
@@ -39,7 +39,7 @@ let data = [
     },
     {
         id: 5,
-        images: "imgages/image 101.png",
+        images: "imgae-for-shop/image 101.png",
         brand: "Grifo",
         caterogy: "Night lamp",
         discountprice: "1.500.000",
