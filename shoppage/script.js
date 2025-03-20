@@ -73,13 +73,15 @@ button.addEventListener("click", () => {
 
 function getdata() {
     let carts = JSON.parse(localStorage.getItem("cart")) || [];
+    console.log(carts);
+    
     let main = document.getElementById("shop-tofle-div")
     main.innerHTML = "";
     carts.map((value, index) => {
             // console.log(value);
             
         let maindiv = document.createElement("div")
-        maindiv.classList.add("d-flex", "gap-5", "align-items-center", "p-2")
+        maindiv.classList.add("d-flex", "justify-content-between", "align-items-center", "p-2")
         maindiv.id = value.id
 
         let img = document.createElement("img")
@@ -103,13 +105,25 @@ function getdata() {
         removeItem(value.id)
             getdata();
         })
+       
+        // console.log(finalPrice);
+        
         maindiv.appendChild(img)
         maindiv.appendChild(childiv)
         maindiv.appendChild(delte)
         main.appendChild(maindiv)
-
-
     })
+   
+    let totalmain = document.createElement("div")
+    totalmain.classList.add("d-flex","p-2","justify-content-between")
+    let totalName = document.createElement("h6")
+    totalName.innerText = "Subtotal"
+    let totalPrice = document.createElement("h6")
+    totalPrice.innerText = "1000000"
+    totalmain.appendChild(totalName)
+    totalmain.appendChild(totalPrice)
+    main.appendChild(totalmain)
+    
 }
 function removeItem(id){
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
