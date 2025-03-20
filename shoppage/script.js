@@ -76,10 +76,11 @@ function getdata() {
     let main = document.getElementById("shop-tofle-div")
     main.innerHTML = "";
     carts.map((value, index) => {
-        console.log(value);
-
+            console.log(value);
+            
         let maindiv = document.createElement("div")
         maindiv.classList.add("d-flex", "gap-5", "align-items-center", "p-2")
+        maindiv.id = value.id
 
         let img = document.createElement("img")
         img.classList.add("w-25")
@@ -97,8 +98,15 @@ function getdata() {
         let delte = document.createElement("button")
         delte.classList.add("border", "btn", "btn-danger")
         delte.innerText = "X"
-        delte.addEventListener("click", () => {
-            localStorage.removeItem("cart")
+        delte.addEventListener("click", (e) => {
+            // console.log(e.id);
+            let ids = e.target.parentElement
+            // console.log(ids);
+            // localStorage.removeItem("cart")
+            
+
+            
+            
             getdata();
         })
         maindiv.appendChild(img)
