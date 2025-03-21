@@ -54,6 +54,7 @@ button.addEventListener("click", () => {
         let existing = cart.find(item => item.id === id)
         if (existing) {
             existing.quintity += 1
+            alert("products is already added")
         } else {
             cart.push({ id, img, price, price2 })
         }
