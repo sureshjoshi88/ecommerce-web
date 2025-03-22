@@ -77,7 +77,9 @@ button.forEach((button)=>{
         // let imgs = document.getElementById("shop-img").src
         // let product = document.getElementById("h5-shop").innerText
         // let product2 = document.getElementById("price-shop").
-        let parent = e.target.parentElement.parentElement.parentElement.parentElement.children[0].children[0].src
+        let parent = e.target.parentElement.parentElement.parentElement.parentElement.children[0].children[0].children[0].src
+        console.log(parent);
+        
         let parent1 =  e.target.parentElement.parentElement.parentElement.parentElement.children[0].children[1].children[0].innerText
         let parent2 = e.target.parentElement.parentElement.parentElement.parentElement.children[0].children[1].children[2].children[0].innerText
         console.log(parent2);
