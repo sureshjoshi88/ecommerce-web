@@ -104,6 +104,7 @@ function mainfunction(){
         
         let main = document.getElementById("shop-tofle-div")
         main.innerHTML = "";
+        let totalprice = 0;
         carts.map((value, index) => {
                 // console.log(value);
                 
@@ -134,19 +135,23 @@ function mainfunction(){
             })
            
             // console.log(finalPrice);
-            
+            let priceText = value.price2 || "0"; // agar price undefined ho to "0" use karein
+        let numericPrice = parseInt(priceText.replace(/[^\d]/g, "")); // 🔹 Remove dots, letters & convert to number
+
+        if (!isNaN(numericPrice)) {
+            totalprice += numericPrice;
+        }
             maindiv.appendChild(img)
             maindiv.appendChild(childiv)
             maindiv.appendChild(delte)
             main.appendChild(maindiv)
         })
-       
         let totalmain = document.createElement("div")
         totalmain.classList.add("d-flex","p-2","justify-content-between")
         let totalName = document.createElement("h6")
         totalName.innerText = "Subtotal"
         let totalPrice = document.createElement("h6")
-        totalPrice.innerText = "1000000"
+        totalPrice.innerText = totalprice.toLocaleString();
         totalmain.appendChild(totalName)
         totalmain.appendChild(totalPrice)
         main.appendChild(totalmain)
