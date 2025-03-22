@@ -72,9 +72,10 @@ function mainfunction() {
                     alert("products is already added")
                 } else {
                     cart.push({ id, img, price, price2 })
+                    alert("added succefull")
                 }
                 localStorage.setItem("cart", JSON.stringify(cart))
-                alert("added succefull")
+               
             }
             // let imgs = document.getElementById("shop-img").src
             // let product = document.getElementById("h5-shop").innerText

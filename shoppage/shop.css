@@ -111,6 +111,11 @@
     align-items: center ;
     font-size: 12px;
 }
+.abs-div-img11{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+}
 .abs-div-img1{
     height: 35px;
     width: 35px;
