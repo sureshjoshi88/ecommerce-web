@@ -153,6 +153,7 @@ function mainfunction() {
         let totalName = document.createElement("h6")
         totalName.innerText = "Subtotal"
         let totalPrice = document.createElement("h6")
+        totalPrice.classList.add("setcolor")
         totalPrice.innerText = totalprice.toLocaleString();
         totalmain.appendChild(totalName)
         totalmain.appendChild(totalPrice)
