@@ -133,6 +133,7 @@ function mainfunction() {
 
                 removeItem(value.id)
                 getdata();
+                alert(value.price + "deleted successfully")
             })
 
             // console.log(finalPrice);
