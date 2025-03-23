@@ -149,7 +149,7 @@ function mainfunction() {
             main.appendChild(maindiv)
         })
         let totalmain = document.createElement("div")
-        totalmain.classList.add("d-flex", "p-2", "justify-content-between")
+        totalmain.classList.add("d-flex", "p-2", "justify-content-between","mt-4")
         let totalName = document.createElement("h6")
         totalName.innerText = "Subtotal"
         let totalPrice = document.createElement("h6")
