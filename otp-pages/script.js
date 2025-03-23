@@ -123,10 +123,6 @@ function startTimer(counter){
     }, 1000);
 }
 startTimer(120);
-
-
-// function startTimer(durationInSeconds) {
-//     let timeLeft = durationInSeconds;
     
 //     const timerInterval = setInterval(() => {
 //         let minutes = Math.floor(timeLeft / 60);
