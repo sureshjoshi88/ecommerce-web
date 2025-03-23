@@ -72,7 +72,7 @@ function mainfunction() {
                     alert("products is already added")
                 } else {
                     cart.push({ id, img, price, price2 })
-                    alert("added succefull")
+                    alert(price + "  added succefull")
                 }
                 localStorage.setItem("cart", JSON.stringify(cart))
                
