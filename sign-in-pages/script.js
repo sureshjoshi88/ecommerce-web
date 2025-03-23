@@ -18,7 +18,7 @@ function inputdata() {
     let password = document.getElementById("password-input")
     let passwordvalue = password.value;
     if (passwordvalue.length <= 8) {
-        alert("plese enter 8 number password")
+        alert("plese enter must be  8 charater strong password")
         let main2 = document.getElementById("main2")
         main2.focus();
         main2.style.boxShadow = "0 0 0 .25rem red"
