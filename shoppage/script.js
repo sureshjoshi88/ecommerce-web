@@ -161,7 +161,20 @@ function mainfunction() {
 
                 removeItem(value.id)
                 getdata();
-                alert(value.price + "deleted successfully")
+                Toastify({
+                    text: value.price + " deleted successfully",
+                    duration: 3000,
+                    destination: "https://github.com/apvarun/toastify-js",
+                    newWindow: true,
+                    close: true,
+                    gravity: "top", // `top` or `bottom`
+                    position: "left", // `left`, `center` or `right`
+                    stopOnFocus: true, // Prevents dismissing of toast on hover
+                    style: {
+                      background: "red",
+                    },
+                    onClick: function(){} // Callback after click
+                  }).showToast();
             })
 
             // console.log(finalPrice);
