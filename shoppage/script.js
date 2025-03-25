@@ -69,12 +69,26 @@ function mainfunction() {
                 let existing = cart.find(item => item.id === id)
                 if (existing) {
                     existing.quintity += 1
-                    alert("products is already added")
+                    Toastify({
+                        text: "products is already added",
+                        duration: 3000,
+                        destination: "https://github.com/apvarun/toastify-js",
+                        newWindow: true,
+                        close: true,
+                        gravity: "top", // `top` or `bottom`
+                        position: "left", // `left`, `center` or `right`
+                        stopOnFocus: true, // Prevents dismissing of toast on hover
+                        style: {
+                          background: "yellow",
+                          color: "green"
+                        },
+                        onClick: function(){} // Callback after click
+                      }).showToast();
                 } else {
                     cart.push({ id, img, price, price2 })
                     // alert(price + "  added succefull")
                     Toastify({
-                        text: price+"added succefull",
+                        text: price +" added succefull",
                         duration: 3000,
                         destination: "https://github.com/apvarun/toastify-js",
                         newWindow: true,
