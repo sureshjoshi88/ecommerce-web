@@ -79,16 +79,15 @@ function mainfunction() {
                         position: "left", // `left`, `center` or `right`
                         stopOnFocus: true, // Prevents dismissing of toast on hover
                         style: {
-                          background: "yellow",
-                          color: "green"
+                            background: "yellow",
+                            color: "green"
                         },
-                        onClick: function(){} // Callback after click
-                      }).showToast();
+                        onClick: function () { } // Callback after click
+                    }).showToast();
                 } else {
                     cart.push({ id, img, price, price2 })
-                    // alert(price + "  added succefull")
                     Toastify({
-                        text: price +" added succefull",
+                        text: price + " added succefull",
                         duration: 3000,
                         destination: "https://github.com/apvarun/toastify-js",
                         newWindow: true,
@@ -97,13 +96,13 @@ function mainfunction() {
                         position: "left", // `left`, `center` or `right`
                         stopOnFocus: true, // Prevents dismissing of toast on hover
                         style: {
-                          background: "linear-gradient(to right, #00b09b, #96c93d)",
+                            background: "linear-gradient(to right, #00b09b, #96c93d)",
                         },
-                        onClick: function(){} // Callback after click
-                      }).showToast();
+                        onClick: function () { } // Callback after click
+                    }).showToast();
                 }
                 localStorage.setItem("cart", JSON.stringify(cart))
-               
+
             }
             // let imgs = document.getElementById("shop-img").src
             // let product = document.getElementById("h5-shop").innerText
@@ -171,10 +170,10 @@ function mainfunction() {
                     position: "left", // `left`, `center` or `right`
                     stopOnFocus: true, // Prevents dismissing of toast on hover
                     style: {
-                      background: "red",
+                        background: "red",
                     },
-                    onClick: function(){} // Callback after click
-                  }).showToast();
+                    onClick: function () { } // Callback after click
+                }).showToast();
             })
 
             // console.log(finalPrice);
@@ -190,7 +189,7 @@ function mainfunction() {
             main.appendChild(maindiv)
         })
         let totalmain = document.createElement("div")
-        totalmain.classList.add("d-flex", "p-2", "justify-content-between","mt-4")
+        totalmain.classList.add("d-flex", "p-2", "justify-content-between", "mt-4")
         let totalName = document.createElement("h6")
         totalName.innerText = "Subtotal"
         let totalPrice = document.createElement("h6")
