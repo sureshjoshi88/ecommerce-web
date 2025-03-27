@@ -75,14 +75,14 @@ function mainfunction() {
                         destination: "https://github.com/apvarun/toastify-js",
                         newWindow: true,
                         close: true,
-                        gravity: "top", // `top` or `bottom`
-                        position: "left", // `left`, `center` or `right`
-                        stopOnFocus: true, // Prevents dismissing of toast on hover
+                        gravity: "top",
+                        position: "left",
+                        stopOnFocus: true,
                         style: {
                             background: "yellow",
                             color: "green"
                         },
-                        onClick: function () { } // Callback after click
+                        onClick: function () { }
                     }).showToast();
                 } else {
                     cart.push({ id, img, price, price2 })
@@ -92,35 +92,22 @@ function mainfunction() {
                         destination: "https://github.com/apvarun/toastify-js",
                         newWindow: true,
                         close: true,
-                        gravity: "top", // `top` or `bottom`
-                        position: "left", // `left`, `center` or `right`
-                        stopOnFocus: true, // Prevents dismissing of toast on hover
+                        gravity: "top",
+                        position: "left",
+                        stopOnFocus: true,
                         style: {
                             background: "linear-gradient(to right, #00b09b, #96c93d)",
                         },
-                        onClick: function () { } // Callback after click
+                        onClick: function () { }
                     }).showToast();
                 }
                 localStorage.setItem("cart", JSON.stringify(cart))
-
             }
-            // let imgs = document.getElementById("shop-img").src
-            // let product = document.getElementById("h5-shop").innerText
-            // let product2 = document.getElementById("price-shop").
             let parent = e.target.parentElement.parentElement.parentElement.parentElement.children[0].children[0].children[0].src
-            // console.log(parent);
-
             let parent1 = e.target.parentElement.parentElement.parentElement.parentElement.children[0].children[1].children[0].innerText
             let parent2 = e.target.parentElement.parentElement.parentElement.parentElement.children[0].children[1].children[2].children[0].innerText
-            // console.log(parent2);
-
             let parent3 = e.target.parentElement.id
-            // console.log(parent3);
-
             setdata(parent3, parent, parent1, parent2)
-            // data.map((value, index) => {
-            //     setdata(value.id,value.images,value. brand,value.discountprice)
-            // })
             getdata()
 
         })
@@ -134,7 +121,6 @@ function mainfunction() {
         main.innerHTML = "";
         let totalprice = 0;
         carts.map((value, index) => {
-            // console.log(value);
 
             let maindiv = document.createElement("div")
             maindiv.classList.add("d-flex", "justify-content-between", "align-items-center", "p-2")
@@ -166,19 +152,18 @@ function mainfunction() {
                     destination: "https://github.com/apvarun/toastify-js",
                     newWindow: true,
                     close: true,
-                    gravity: "top", 
-                    position: "left", 
-                    stopOnFocus: true, 
+                    gravity: "top",
+                    position: "left",
+                    stopOnFocus: true,
                     style: {
                         background: "red",
                     },
-                    onClick: function () { } 
+                    onClick: function () { }
                 }).showToast();
             })
 
-            // console.log(finalPrice);
-            let priceText = value.price2 || "0"; 
-            let numericPrice = parseInt(priceText.replace(/[^\d]/g, "")); 
+            let priceText = value.price2 || "0";
+            let numericPrice = parseInt(priceText.replace(/[^\d]/g, ""));
 
             if (!isNaN(numericPrice)) {
                 totalprice += numericPrice;
