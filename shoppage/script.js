@@ -172,13 +172,13 @@ function mainfunction() {
                     style: {
                         background: "red",
                     },
-                    onClick: function () { } // Callback after click
+                    onClick: function () { } 
                 }).showToast();
             })
 
             // console.log(finalPrice);
-            let priceText = value.price2 || "0"; // agar price undefined ho to "0" use karein
-            let numericPrice = parseInt(priceText.replace(/[^\d]/g, "")); // 🔹 Remove dots, letters & convert to number
+            let priceText = value.price2 || "0"; 
+            let numericPrice = parseInt(priceText.replace(/[^\d]/g, "")); 
 
             if (!isNaN(numericPrice)) {
                 totalprice += numericPrice;
