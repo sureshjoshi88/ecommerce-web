@@ -166,9 +166,9 @@ function mainfunction() {
                     destination: "https://github.com/apvarun/toastify-js",
                     newWindow: true,
                     close: true,
-                    gravity: "top", // `top` or `bottom`
-                    position: "left", // `left`, `center` or `right`
-                    stopOnFocus: true, // Prevents dismissing of toast on hover
+                    gravity: "top", 
+                    position: "left", 
+                    stopOnFocus: true, 
                     style: {
                         background: "red",
                     },
