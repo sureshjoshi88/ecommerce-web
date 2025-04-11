@@ -60,7 +60,7 @@
 // })
 function mainfunction() {
 
-    let button = document.querySelectorAll(".main-buton-shop-1")
+    let button = document.querySelectorAll(".main-buton-shop-1");
     button.forEach((button) => {
 
         button.addEventListener("click", (e) => {
@@ -115,8 +115,6 @@ function mainfunction() {
 
     function getdata() {
         let carts = JSON.parse(localStorage.getItem("cart")) || [];
-        console.log(carts);
-
         let main = document.getElementById("shop-tofle-div")
         main.innerHTML = "";
         let totalprice = 0;
