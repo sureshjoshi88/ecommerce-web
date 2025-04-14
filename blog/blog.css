@@ -154,3 +154,6 @@
     color: white;
     background-color: #ba923e;
 }
+img{
+    cursor: pointer;
+}
