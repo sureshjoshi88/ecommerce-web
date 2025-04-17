@@ -32,6 +32,7 @@ isuserauthicated();
 
 let data = [
   {
+    id:1,
     images: "imgages/image 1.png",
     brand: "Syltherine",
     caterogy: "Stylish cafe chair",
@@ -40,6 +41,7 @@ let data = [
     discountpersent: "-30%"
   },
   {
+    id:2,
     images: "imgages/image 2.png",
     brand: "Leviosa",
     caterogy: "Stylish cafe chair",
@@ -48,6 +50,7 @@ let data = [
 
   },
   {
+    id:3,
     images: "imgages/Images.png",
     brand: "Lolito",
     caterogy: "Luxury big sofa",
@@ -57,6 +60,7 @@ let data = [
 
   },
   {
+    id:4,
     images: "imgages/image 4.png",
     brand: "Syltherine",
     caterogy: "Stylish cafe chair",
@@ -66,6 +70,7 @@ let data = [
 
   },
   {
+    id:5,
     images: "imgages/image 101.png",
     brand: "Grifo",
     caterogy: "Night lamp",
@@ -73,6 +78,7 @@ let data = [
     discountpersent: "New"
   },
   {
+    id:6,
     images: "imgages/Images (2).png",
     brand: "Muggo",
     caterogy: "Small mug",
@@ -81,6 +87,7 @@ let data = [
 
   },
   {
+    id:7,
     images: "imgages/image 7.png",
     brand: "Pingky",
     caterogy: "Cute bed set",
@@ -90,6 +97,7 @@ let data = [
 
   },
   {
+    id:8,
     images: "imgages/image 8.png",
     brand: "Potty",
     caterogy: "Minimalist flower pot",
@@ -142,7 +150,8 @@ function homeproducts() {
       mainrow.innerHTML += `
         <div class="col-sm-12 col-md-6 col-lg-3 mt-3 ">
               <div class="p-1">
-               <div class="main-for-anker-tag"> <div class="main-for-cart">
+               <div class="main-for-anker-tag">
+                <div class="main-for-cart">
                 <div class="position-relative h-100">
                   <img width="100%" class="imgahes-div-js" src="${value.images}" alt="">
                    <div class="abs-div-img">
@@ -159,8 +168,8 @@ function homeproducts() {
                </div>
                 <div class="abs-for-blur-child">
                  <div class="mt-5 pt-5">
-                  <div class="mt-5">
-                    <button class="btn btn-light ps-4 pe-4 ms-3 text-warning">Add to cart</button>
+                  <div class="mt-5" id=${value.id}>
+                    <button class="btn btn-light ps-4 pe-4 ms-3 text-warning main-buton-1">Add to cart</button>
                     <div class="d-flex  align-items-center gap-3">
                       <div class="d-flex align-items-center gap-1 ms-2">
                         <i class="fa-solid fa-share-nodes" style="color: #f5f5f5;"></i>
@@ -190,10 +199,89 @@ homeproducts();
 
 
 
+function getdata() {
+  let carts = JSON.parse(localStorage.getItem("cart")) || [];
+  let main = document.getElementById("shop-tofle-div")
+  main.innerHTML = "";
+  let totalprice = 0;
+  carts.map((value, index) => {
 
+      let maindiv = document.createElement("div")
+      maindiv.classList.add("d-flex", "justify-content-between", "align-items-center", "p-2")
+      maindiv.id = value.id
+
+      let img = document.createElement("img")
+      img.classList.add("w-25")
+      img.src = value.img;
+
+      let childiv = document.createElement("div")
+      let products = document.createElement("h6")
+      products.innerText = value.price;
+      let products1 = document.createElement("h6")
+      products1.innerText = value.price2;
+      products1.classList.add("setcolor");
+      childiv.appendChild(products)
+      childiv.appendChild(products1)
+
+      let delte = document.createElement("button")
+      delte.classList.add("border", "btn", "btn-danger")
+      delte.innerText = "X"
+      delte.addEventListener("click", () => {
+
+          removeItem(value.id)
+          getdata();
+          Toastify({
+              text: value.price + " deleted successfully",
+              duration: 3000,
+              destination: "https://github.com/apvarun/toastify-js",
+              newWindow: true,
+              close: true,
+              gravity: "top",
+              position: "left",
+              stopOnFocus: true,
+              style: {
+                  background: "red",
+              },
+              onClick: function () { }
+          }).showToast();
+      })
+
+      let priceText = value.price2 || "0";
+      let numericPrice = parseInt(priceText.replace(/[^\d]/g, ""));
+
+      if (!isNaN(numericPrice)) {
+          totalprice += numericPrice;
+      }
+      maindiv.appendChild(img)
+      maindiv.appendChild(childiv)
+      maindiv.appendChild(delte)
+      main.appendChild(maindiv)
+  })
+  let totalmain = document.createElement("div")
+  totalmain.classList.add("d-flex", "p-2", "justify-content-between", "mt-4")
+  let totalName = document.createElement("h6")
+  totalName.innerText = "Subtotal"
+  let totalPrice = document.createElement("h6")
+  totalPrice.classList.add("setcolor")
+  totalPrice.innerText = totalprice.toLocaleString();
+  totalmain.appendChild(totalName)
+  totalmain.appendChild(totalPrice)
+  main.appendChild(totalmain)
+
+}
+function removeItem(id) {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  cart = cart.filter((value) => value.id != id)
+  localStorage.setItem("cart", JSON.stringify(cart))
+}
+getdata();
   
 
 const scroll = new LocomotiveScroll({
   el: document.querySelector('#main-body'),
   smooth: true
 });
+
+
+
+
