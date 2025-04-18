@@ -197,7 +197,59 @@ function homeproducts() {
 }
 homeproducts();
 
+function mainfunction(){
+    document.getElementById("loder-row").addEventListener("click",(e)=>{
+      if (e.target.classList.contains("main-buton-1")) {
+        let ide = e.target.parentElement.id;
+        let imgs = e.target.parentElement.parentElement.parentElement.parentElement.children[0].children[0].src;
+        let brand = e.target.parentElement.parentElement.parentElement.parentElement.children[1].children[0].innerText
+        let prices = e.target.parentElement.parentElement.parentElement.parentElement.children[1].children[2].children[0].innerText 
+        setdata(ide,imgs,brand,prices)
+        getdata();
+    function setdata(id,img,price,price2){
+    let cart = JSON.parse(localStorage.getItem("cart"))||[];
+     let existing = cart.find(item => item.id === id)
+                if (existing) {
 
+                    existing.quintity += 1
+                    Toastify({
+                        text: "products is already added",
+                        duration: 3000,
+                        destination: "https://github.com/apvarun/toastify-js",
+                        newWindow: true,
+                        close: true,
+                        gravity: "top",
+                        position: "left",
+                        stopOnFocus: true,
+                        style: {
+                            background: "yellow",
+                            color: "green"
+                        },
+                        onClick: function () { }
+                    }).showToast();
+                }else {
+                  cart.push({ id, img, price, price2 })
+                  Toastify({
+                      text: price + " added succefull",
+                      duration: 3000,
+                      destination: "https://github.com/apvarun/toastify-js",
+                      newWindow: true,
+                      close: true,
+                      gravity: "top",
+                      position: "left",
+                      stopOnFocus: true,
+                      style: {
+                          background: "linear-gradient(to right, #00b09b, #96c93d)",
+                      },
+                      onClick: function () { }
+                  }).showToast();
+                  localStorage.setItem("cart", JSON.stringify(cart))
+              }
+
+    }
+   
+  }
+  })
 
 function getdata() {
   let carts = JSON.parse(localStorage.getItem("cart")) || [];
@@ -227,7 +279,6 @@ function getdata() {
       delte.classList.add("border", "btn", "btn-danger")
       delte.innerText = "X"
       delte.addEventListener("click", () => {
-
           removeItem(value.id)
           getdata();
           Toastify({
@@ -275,6 +326,10 @@ function removeItem(id) {
   localStorage.setItem("cart", JSON.stringify(cart))
 }
 getdata();
+} 
+
+mainfunction();
+
   
 
 const scroll = new LocomotiveScroll({
