@@ -340,3 +340,17 @@ const scroll = new LocomotiveScroll({
 
 
 
+let navbtn = document.getElementById("flexSwitchCheckDefault")
+function mybtn(){
+
+  if(document.body.style.backgroundColor === "white" || document.body.style.backgroundColor === ""){
+    document.body.style.backgroundColor="black"
+    document.body.style.color="white"
+    console.log("clck");
+  }else{
+    document.body.style.backgroundColor="white"
+    document.body.style.color="black"
+    
+  }
+  
+}
