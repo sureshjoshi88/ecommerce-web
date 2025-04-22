@@ -158,7 +158,7 @@ function homeproducts() {
                   <p class="pt-3">${value.discountpersent ? value.discountpersent : " "}</p>
                 </div>
                 </div>
-               <div class="ps-2">
+               <div class="ps-2 colr-name">
                 <h5 class="pt-2">${value.brand}</h5>
                 <p class="opacity-75">${value.caterogy}</p>
                 <div class="d-flex gap-2 align-items-center img-detailes">
@@ -346,7 +346,7 @@ function mybtn(){
   if(document.body.style.backgroundColor === "white" || document.body.style.backgroundColor === ""){
     document.body.style.backgroundColor="black"
     document.body.style.color="white"
-    console.log("clck");
+   
   }else{
     document.body.style.backgroundColor="white"
     document.body.style.color="black"
