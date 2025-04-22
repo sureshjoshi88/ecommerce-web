@@ -346,15 +346,29 @@ function mybtn(){
   if(document.body.style.backgroundColor === "white" || document.body.style.backgroundColor === ""){
     document.body.style.backgroundColor="black"
     document.body.style.color="white"
-   let divs=  document.querySelectorAll(".colr-name")
+    let divs=  document.querySelectorAll(".colr-name")
     divs.forEach((num)=>{
       num.style.backgroundColor="black"
       num.style.color="white"
     })
+   let foter =  document.querySelectorAll(".foter-color");
+   foter.forEach((foters)=>{
+    foters.style.color="white";
+    foters.style.backgroundColor="black"
+   })
   }else{
     document.body.style.backgroundColor="white"
     document.body.style.color="black"
-    
+    let divs=  document.querySelectorAll(".colr-name")
+    divs.forEach((num)=>{
+      num.style.backgroundColor="white"
+      num.style.color="black"
+    })
+   let foter =  document.querySelectorAll(".foter-color");
+   foter.forEach((foters)=>{
+    foters.style.color="black";
+    foters.style.backgroundColor="white"
+   })
   }
   
 }
