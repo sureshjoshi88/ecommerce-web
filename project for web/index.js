@@ -346,7 +346,11 @@ function mybtn(){
   if(document.body.style.backgroundColor === "white" || document.body.style.backgroundColor === ""){
     document.body.style.backgroundColor="black"
     document.body.style.color="white"
-   
+   let divs=  document.querySelectorAll(".colr-name")
+    divs.forEach((num)=>{
+      num.style.backgroundColor="black"
+      num.style.color="white"
+    })
   }else{
     document.body.style.backgroundColor="white"
     document.body.style.color="black"
