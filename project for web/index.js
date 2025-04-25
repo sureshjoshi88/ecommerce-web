@@ -356,6 +356,15 @@ function mybtn(){
     foters.style.color="white";
     foters.style.backgroundColor="black"
    })
+   let nav = document.querySelector(".main-nav");
+   let nav1 = document.querySelectorAll(".nav-link");
+   nav.style.backgroundColor="black";
+   nav1.forEach((colors)=>{
+
+     colors.style.color="white";
+   })
+   
+   
   }else{
     document.body.style.backgroundColor="white"
     document.body.style.color="black"
@@ -368,6 +377,13 @@ function mybtn(){
    foter.forEach((foters)=>{
     foters.style.color="black";
     foters.style.backgroundColor="white"
+   })
+   let nav = document.querySelector(".main-nav");
+   let nav1 = document.querySelectorAll(".nav-link");
+   nav.style.backgroundColor="white";
+   nav1.forEach((colors)=>{
+
+     colors.style.color="black";
    })
   }
   
