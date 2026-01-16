@@ -12,6 +12,7 @@ function getdata() {
         let img = document.createElement("img")
         img.classList.add("w-25")
         img.src = value.img;
+        img.alt = "image"
   
         let childiv = document.createElement("div")
         let products = document.createElement("h6")
